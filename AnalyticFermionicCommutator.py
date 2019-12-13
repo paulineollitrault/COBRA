@@ -37,12 +37,14 @@ class term:
     def order(self):
         return len(self._indlist)
     
-def h_matrix_to_terms(h):
+def h_matrix_to_terms(h,threshold=1e-12):
     res = []
     dim  = len(h.shape)
     size = h.shape[0]
     for x in itertools.product(range(size),repeat = dim):
-        res.append(term(h[x],list(x)))
+        c = h[x]
+        if abs(c)>threshold:
+            res.append(term(c,list(x)))
     return res
 
 def scMult(scalar,oper,threshold=1e-12):
@@ -275,6 +277,8 @@ def RemoveDoubles(oper,threshold=1e-12):
     o1 = SimplifyOper(o1,threshold)
     Removed = False
     while Removed == False:
+        if not o1:
+            Removed = True
         for i in range(len(o1)):
             ind = o1[i].indlist
             cr_ind = ind[:len(ind)//2]
@@ -287,8 +291,12 @@ def RemoveDoubles(oper,threshold=1e-12):
             if (np.array_equal(np_cr_ind,cp_cr_ind)==False)or(np.array_equal(np_an_ind,cp_an_ind)==False):
                 o1.pop(i)
                 break
-            elif i == len(o1)-1:
+            elif (not o1):
                 Removed = True
+                break
+            elif (i == len(o1)-1):
+                Removed = True
+                break                
     return o1
 
 
