@@ -410,7 +410,7 @@ def ten_commutator(fop_a, fop_b, fop_c=None, stat = 'fermi', Chem=True, threshol
     if len(ha_phys_list)!=0:
         nf = ha_phys_list[0].shape[0]
     else:
-        nf = hb_phys_list[0].shape[0]
+        nf = fop_a.h1.shape[0] #hb_phys_list[0].shape[0]
             
     if fop_c is None:
         #just [A,B]
