@@ -1,0 +1,42 @@
+The overlap matrix requires computing commutators:
+Between 1-body operators -- ADJ NOR
+operator number  2
+hs[0][i,j] = 1 * delta(a,b) 
+hs[0][b,a] = -1 * delta(j,i) 
+===========
+Between 1-body operators -- ADJ ADJ
+operator number  0
+===========
+Between 1-body and 2-body operators -- ADJ NOR
+operator number  4
+hs[1][c,i,j,k] = 1 * delta(a,b) 
+hs[1][b,i,j,k] = 1 * delta(a,c) 
+hs[1][b,c,a,j] = -1 * delta(k,i) 
+hs[1][b,c,a,k] = -1 * delta(j,i) 
+===========
+Between 1-body and 2-body operators -- ADJ ADJ
+operator number  0
+===========
+Between 2-body and 1-body operators -- ADJ NOR
+operator number  4
+hs[1][i,j,a,k] = 1 * delta(b,c) 
+hs[1][i,j,b,k] = 1 * delta(a,c) 
+hs[1][c,j,a,b] = -1 * delta(k,i) 
+hs[1][c,i,a,b] = -1 * delta(k,j) 
+===========
+Between 2-body and 1-body operators -- ADJ ADJ
+operator number  0
+===========
+Between 2-body operators -- ADJ NOR
+operator number  8
+hs[2][d,i,j,a,k,l] = 1 * delta(b,c) 
+hs[2][c,i,j,a,k,l] = 1 * delta(b,d) 
+hs[2][d,i,j,b,k,l] = 1 * delta(a,c) 
+hs[2][c,i,j,b,k,l] = 1 * delta(a,d) 
+hs[2][c,d,j,a,b,k] = -1 * delta(l,i) 
+hs[2][c,d,i,a,b,k] = -1 * delta(l,j) 
+hs[2][c,d,j,a,b,l] = -1 * delta(k,i) 
+hs[2][c,d,i,a,b,l] = -1 * delta(k,j) 
+===========
+Between 2-body operators -- ADJ ADJ
+operator number  0

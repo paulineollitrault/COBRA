@@ -26,10 +26,22 @@ class Operator_String:
         else:           self.stat =  1
 
     def Print(self,message=''):
-        s=message+' '+str(self.coeff)+' * '
-        for t in self.tensors:   s+=t+' '
-        s+='* '
-        for o in self.operators: s+=decorate(o)+' '
+        nop = len(self.operators)
+        idx = [s[1] for s in self.operators]
+        s = 'hs['+str(nop//2-1)+']['
+        for i in idx:
+            if(i in ['p','r','q','s']): s+=':,'
+            else:                       s+=str(i)+','
+        s=s[:len(s)-1]+'] = '+str(self.coeff)+' *'
+        for t in self.tensors:   
+            if(t[0]=='I'): s+= ' delta('+str(t[1])+','+str(t[2])+') *'
+            else:
+                s+= ' '+t[0]+'['
+                for jdx in t[1:]:
+                    if(jdx in ['p','r','q','s']): s+=':,'
+                    else:                         s+=jdx+','
+                s=s[:len(s)-1]+'] *'
+        s=s[:len(s)-1]
         print(s)
 
     def Copy(self):
