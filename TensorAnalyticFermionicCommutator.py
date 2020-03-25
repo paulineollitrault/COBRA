@@ -334,14 +334,26 @@ def hComPhys(ha,hb, stat = 'fermi', threshold=1e-12):
     return res
 
 def hSimplify(h, stat = 'fermi', threshold=1e-12):
+
+    print("I AM IN hSimplify")
+    print("H in ",h.shape)
     res = np.zeros_like(h)
     if stat == 'fermi':
         eta = -1
     else:
         eta = +1
     
+
+    print("RES ",res.shape)
+
     dim = len(h.shape)//2
     nferm = h.shape[0]
+
+    print("I AM TRYING TO LOOP OVER ")
+    print(len(list(it.combinations(np.arange(nferm), dim))))
+    print("TWICE")
+
+    # 1 -- ACCELERATE hSimplify REMOVING FOR LOOPS!
     
     for xL in it.combinations(np.arange(nferm), dim):
         for xR in it.combinations(np.arange(nferm), dim):

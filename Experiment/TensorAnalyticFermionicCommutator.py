@@ -3,6 +3,7 @@ import logging
 import sys
 import copy
 from qiskit.chemistry import FermionicOperator
+from fermionic_operator_nbody import FermionicOperatorNBody
 
 import numpy as np
 
@@ -334,15 +335,25 @@ def hComPhys(ha,hb, stat = 'fermi', threshold=1e-12):
     return res
 
 def hSimplify(h, stat = 'fermi', threshold=1e-12):
+
+    print("I AM IN hSimplify")
+    print("H in ",h.shape)
     res = np.zeros_like(h)
     if stat == 'fermi':
         eta = -1
     else:
         eta = +1
-    
+   
+
+    print("RES ",res.shape)
+
     dim = len(h.shape)//2
     nferm = h.shape[0]
-    
+
+    print("I AM TRYING TO LOOP OVER ")
+    print(len(list(it.combinations(np.arange(nferm), dim))))
+    print("TWICE")
+
     for xL in it.combinations(np.arange(nferm), dim):
         for xR in it.combinations(np.arange(nferm), dim):
             val = 0
@@ -376,67 +387,84 @@ def ten_commutator(fop_a, fop_b, fop_c=None, stat = 'fermi', Chem=True, threshol
     # if fop_c ==0 => return = [a,b] ([X,Y]=X*Y-Y*X)
     # if fop_c !=0 => return = 0.5*([[a,b],c]+[a,[b,c]])
     
+    import time
+
+    t0 = time.time()
+
     ha_list = []
-    if np.all(fop_a.h1)!=0:
-        ha_list.append(fop_a.h1)
-    if np.all(fop_a.h2)!=0:
-        ha_list.append(fop_a.h2)
+
+    if np.abs(fop_a.h1).max()>threshold: ha_list.append(fop_a.h1)
+    if np.abs(fop_a.h2).max()>threshold: ha_list.append(fop_a.h2)
     
     hb_list = []
-    if np.all(fop_b.h1)!=0:
-        hb_list.append(fop_b.h1)
-    if np.all(fop_b.h2)!=0:
-        hb_list.append(fop_b.h2)
+    if np.abs(fop_b.h1).max()>threshold: hb_list.append(fop_b.h1)
+    if np.abs(fop_b.h2).max()>threshold: hb_list.append(fop_b.h2)
     
     hc_list = []
     if fop_c is not None:
-        if np.all(fop_c.h1)!=0:
-            hc_list.append(fop_c.h1)
-        if np.all(fop_c.h2)!=0:
-            hc_list.append(fop_c.h2)
+        if np.abs(fop_c.h1).max()>threshold: hc_list.append(fop_c.h1)
+        if np.abs(fop_c.h2).max()>threshold: hc_list.append(fop_c.h2)
 
     ha_phys_list = []
     hb_phys_list = []
     hc_phys_list = []
     
     if Chem==True:
-        for x in ha_list:
-            ha_phys_list.append(toPhys(x))
-        for x in hb_list:
-            hb_phys_list.append(toPhys(x))
-        for x in hc_list:
-            hc_phys_list.append(toPhys(x))
+        for x in ha_list: ha_phys_list.append(toPhys(x))
+        for x in hb_list: hb_phys_list.append(toPhys(x))
+        for x in hc_list: hc_phys_list.append(toPhys(x))
 
-    if len(ha_phys_list)!=0:
-        nf = ha_phys_list[0].shape[0]
-    else:
-        nf = fop_a.h1.shape[0] #hb_phys_list[0].shape[0]
-            
+    if len(ha_phys_list)!=0: nf = ha_phys_list[0].shape[0]
+    else:                    nf = fop_a.h1.shape[0]
+
+    t1 = time.time()
+
+    print("TTT preparation time",t1-t0)    
+        
     if fop_c is None:
         #just [A,B]
         res = []
+
+        t2 = time.time()
+
         for x in ha_phys_list:
             for y in hb_phys_list:
-                res.append(hComPhys(x,y, stat, threshold))
-        
+                res.append(hComPhys(x,y,stat,threshold))
+
+        t3 = time.time()
+        print("TTT list of results construction ",t3-t2)
+
+        print("2 args, before simplification ",len(res))
         res = mat_list_simplify(res,nf,threshold)
+        print("2 args, after simplification  ",len(res))
         
+        t4 = time.time()
+        print("TTT list of results simplification ",t4-t3)
+
         if len(res)==0:
             #return empty fermionic operator
             return FermionicOperator(np.zeros((nf,nf)))
         else:
-            h1out = np.zeros((nf,nf))
-            h2out = np.zeros((nf,nf,nf,nf))
+            print("SHAPES ",[x.shape for x in res])
+            shapes   = [len(x.shape) for x in res]
+            max_size = max(shapes)
+            hs       = [np.zeros(tuple([nf]*s)) for s in [1,2,3,4]]
+
+            print("AB indices in tensors ",shapes)
 
             for x in res:
-                if len(x.shape)==2:
-                    h1out = hSimplify(x, stat, threshold)
-                if len(x.shape)==4:
-                    h2out = hSimplify(x, stat, threshold)
+                t5 = time.time()
+                hout = hSimplify(x,stat,threshold)
+                t6 = time.time()
+                hs[len(x.shape)//2-1] = hout
+                t7 = time.time()
+
+                print("TTT hSimplify ",t7-t6,t6-t5)
+
             if Chem==True:
-                return FermionicOperator(toChem(h1out),toChem(h2out))
-            else:
-                return FermionicOperator(h1out,h2out)                    
+                hs = [ toChem(h) for h in hs]
+            return FermionicOperatorNBody(hs)
+
     else:
         #([[A,B],C]+[A,[B,C]])/2
         comAB = []
@@ -465,21 +493,25 @@ def ten_commutator(fop_a, fop_b, fop_c=None, stat = 'fermi', Chem=True, threshol
                 for y in comBC:
                     comA_BC.append(hComPhys(x,y, stat, threshold))
         
-        comABC = mat_list_simplify(comAB_C+comA_BC,nf,threshold)
+        comABC = comAB_C+comA_BC
+        print("3 args, length before simplification ",len(comABC))        
+        comABC = mat_list_simplify(comABC,nf,threshold)
+        print("3 args, length after simplification ",len(comABC))
 
         if len(comABC)==0:
             #return empty fermionic operator
             return FermionicOperator(np.zeros((nf,nf)))
         else:
-            h1out = np.zeros((nf,nf))
-            h2out = np.zeros((nf,nf,nf,nf))
+            shapes   = [len(x) for x in comABC]
+            max_size = max(shapes)
+            hs       = [np.zeros(tuple([nf]*s)) for s in shapes]
 
-            for x in comABC:
-                if len(x.shape)==2:
-                    h1out = 0.5*hSimplify(x, stat, threshold)
-                if len(x.shape)==4:
-                    h2out = 0.5*hSimplify(x, stat, threshold)
+            print("ABC indices in tensors ",shapes)
+
+            for m,x in enumerate(comABC):
+                hout = 0.5*hSimplify(x,stat,threshold)
+                hs[m] = hout.copy()
             if Chem==True:
-                return FermionicOperator(toChem(h1out),toChem(h2out))
-            else:
-                return FermionicOperator(h1out,h2out)
+                hs = [ toChem(h) for h in hs]
+            return FermionicOperatorNBody(hs)
+
