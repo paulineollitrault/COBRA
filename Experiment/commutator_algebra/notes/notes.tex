@@ -1,0 +1,97 @@
+\documentclass{report}
+
+\usepackage{amsmath,amsfonts,amsthm,cancel,mathtools}
+
+\begin{document}
+
+\section{Automatic commutator calculation}
+
+Let us consider an expression of the form
+\begin{equation}
+\hat{O} = c T_{i_1 \dots i_k \, ; \, j_1 \dots j_r} \, \hat{A}_{i_1} \dots \hat{A}_{i_k}
+\end{equation}
+where $c$ is a constant, $T$ is a tensor, $\hat{A}_p \in \hat{a}_p, \hat{a}^\dagger_p$ and repeated indices are summed over. 
+We will call this expression an "operator string". We want to compute the commutator between two such operator strings in an
+automatic fashion, and in perspective some nested commutators. For example, in CCSD, the following commutators are important:
+\begin{equation}
+\begin{split}
+\Big[ h_{pq} \hat{a}^\dagger_p \hat{a}_q , t_{ai} \hat{a}^\dagger_a \hat{a}_i  \Big] 
+&= 
+h_{pq} t_{ai} 
+\Big[ \hat{a}^\dagger_p \hat{a}_q , \hat{a}^\dagger_a \hat{a}_i  \Big]
+\\
+\Big[ \Big[ h_{pq} \hat{a}^\dagger_p \hat{a}_q , t_{ai} \hat{a}^\dagger_a \hat{a}_i  \Big] , t_{bj} \hat{a}^\dagger_b \hat{a}_j \Big] 
+&= 
+h_{pq}  t_{ai} t_{bj} 
+\Big[ \Big[ \hat{a}^\dagger_p \hat{a}_q , \hat{a}^\dagger_a \hat{a}_i  \Big] , \hat{a}^\dagger_b \hat{a}_j \Big] 
+\end{split}
+\end{equation}
+Writing $\hat{E}^p_q = \hat{a}^\dagger_p \hat{a}_q$ and recalling that
+\begin{equation}
+\Big[ \hat{E}^p_q , \hat{E}^a_i \Big] = \delta_{aq} \hat{E}^p_i - \delta_{pi} \hat{E}^a_q
+\end{equation}
+they take the form
+\begin{equation}
+\begin{split}
+\Big[ h_{pq} \hat{a}^\dagger_p \hat{a}_q , t_{ai} \hat{a}^\dagger_a \hat{a}_i  \Big] 
+&= 
+h_{pa} t_{ai} \hat{E}^p_i - h_{iq} t_{ai} \hat{E}^a_q
+\\
+\Big[ \Big[ h_{pq} \hat{a}^\dagger_p \hat{a}_q , t_{ai} \hat{a}^\dagger_a \hat{a}_i  \Big] , t_{bj} \hat{a}^\dagger_b \hat{a}_j \Big] 
+&= 
+- t_{bk} h_{ka} t_{ai} \hat{E}^b_i
+- t_{ak} h_{kb} t_{bj} \hat{E}^a_j
+\end{split}
+\end{equation}
+
+One observation is that commutators between "operator strings" will produce linear combinations of operator strings (which we
+call "operator string lists"), and that the commutator is a bilinear operator, so then
+\begin{equation}
+\Big[ \hat{O}_1, \hat{O}_2 \Big] = \sum_{ij} x_{i1} x_{i2} \Big[ \hat{O}_{i1}, \hat{O}_{j2} \Big] = \sum_{ijk} x_{i1} x_{i2} y_{ijk} \hat{O}_{k}
+\end{equation}
+One way to automatically compute these commutators is to rely on the operator form of Wick's theorem:
+\begin{itemize}
+\item A product of operators $\hat{A}_i$ is normally ordered if all destructors are at the right of the creators.
+The very usefulness of the definition is the obvious property that the expectation value on the empty state
+of a normally ordered operator is always zero.
+The normal ordering operator brings a generic product into a normal form.  
+If the product contains $k$ creators mixed with $n-k$ factors, it is
+\begin{equation}
+N \Big[ \hat{A}_1 \dots \hat{A}_n \Big] = (\pm 1)^P \hat{A}^\dagger_{i_1} \dots \hat{A}^\dagger_{i_k} \hat{A}_{i_{k+1}} \dots \hat{A}_{i_n}
+\end{equation}
+where $\pm$ for bosons and fermions respectively, and $P$ is the permutation that brings the sequence $1 \dots n$ to the sequence 
+$i_1 \dots i_n$. 
+\item The contraction between two operators is 
+\begin{equation}
+\overbracket{\hat{X} \hat{Y}}
+= \left\{
+\begin{array}{ll}
+\big[ \hat{X} , \hat{Y} \big]_{\pm} & \mbox{if $\hat{X}$ is a destructor and $\hat{Y}$ is a creator} \\
+0 & \mbox{otherwise} \\
+\end{array}
+\right.
+\end{equation}
+\item Wick's theorem states that
+\begin{equation}
+\begin{split}
+\hat{A}_1 \dots \hat{A}_n &= N \left[ \hat{A}_1 \dots \hat{A}_n \right] \\
+&+ \sum_{i_1 j_1} \overbracket{\hat{A}_{i_1} \hat{A}_{j_1}}
+N \left[ \hat{A}_1 \dots \cancel{\hat{A}_{i_1}} \dots \cancel{\hat{A}_{j_1}} \dots  \hat{A}_n \right] \\
+&+ \sum_{i_1 i_2 j_1 j_2} \overbracket{\hat{A}_{i_1} \hat{A}_{j_1}} \overbracket{\hat{A}_{i_2} \hat{A}_{j_2}}
+N \left[ \hat{A}_1 \dots \cancel{\hat{A}_{i_1}} \dots \cancel{\hat{A}_{j_1}} \dots \cancel{\hat{A}_{i_2}} \dots \cancel{\hat{A}_{j_2}} \dots \hat{A}_n \right] \\
+&+ \dots 
+\end{split}
+\end{equation}
+\end{itemize}
+Using Wick's theorem, one can represent $\hat{X} \hat{Y}$ and $\hat{Y} \hat{X}$ as linear combinations of normally ordered terms,
+i.e. two "operator string lists", and then compute their commutator as the difference $\hat{X} \hat{Y} - \hat{Y} \hat{X}$ yet another
+"operator string list".
+When executed straightforwardly, these operations produce redundant lists, potentially containing many zeros and linearly dependent terms.
+So then it is useful to be able to simplify an "operator string list" by identifying and removing zeros, finding terms with identical tensors and different coefficients and summing over those coefficients, and (in the case of CCSD and EOM-CCSD) removing contractions over pairs of
+virtual/occupied orbitals.
+
+
+
+
+
+\end{document}
