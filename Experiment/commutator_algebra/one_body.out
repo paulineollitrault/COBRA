@@ -1,0 +1,154 @@
+The hamiltonian matrix requires computing commutators:
+Between 1-body operators -- ADJ NOR
+operator number  6
+hs[0][i,j] = 2 * H[a,b] 
+hs[0][b,:] = -1 * H[a,:] * delta(j,i) 
+hs[0][:,j] = -1 * H[:,i] * delta(a,b) 
+hs[0][b,a] = 2 * H[j,i] 
+hs[0][:,a] = -1 * H[:,b] * delta(j,i) 
+hs[0][i,:] = -1 * H[j,:] * delta(a,b) 
+===========
+Between 1-body operators -- ADJ ADJ
+operator number  2
+hs[0][i,b] = 2 * H[a,j] 
+hs[0][j,a] = 2 * H[b,i] 
+Between 1-body and 2-body operators -- ADJ NOR
+operator number  20
+hs[1][c,i,j,k] = 2 * H[a,b] 
+hs[1][b,i,j,k] = 2 * H[a,c] 
+hs[1][b,c,k,:] = -1 * H[a,:] * delta(j,i) 
+hs[1][b,c,j,:] = -1 * H[a,:] * delta(k,i) 
+hs[1][c,:,j,k] = -1 * H[:,i] * delta(a,b) 
+hs[1][b,:,j,k] = -1 * H[:,i] * delta(a,c) 
+hs[1][b,c,a,k] = 2 * H[j,i] 
+hs[1][b,c,a,j] = 2 * H[k,i] 
+hs[1][i,:,j,k] = 1 * H[:,b] * delta(a,c) 
+hs[1][c,:,a,k] = -1 * H[:,b] * delta(j,i) 
+hs[1][c,:,a,j] = -1 * H[:,b] * delta(k,i) 
+hs[1][i,:,j,k] = 1 * H[:,c] * delta(a,b) 
+hs[1][b,:,a,k] = -1 * H[:,c] * delta(j,i) 
+hs[1][b,:,a,j] = -1 * H[:,c] * delta(k,i) 
+hs[1][c,i,k,:] = -1 * H[j,:] * delta(a,b) 
+hs[1][b,i,k,:] = -1 * H[j,:] * delta(a,c) 
+hs[1][b,c,a,:] = 1 * H[j,:] * delta(k,i) 
+hs[1][c,i,j,:] = -1 * H[k,:] * delta(a,b) 
+hs[1][b,i,j,:] = -1 * H[k,:] * delta(a,c) 
+hs[1][b,c,a,:] = 1 * H[k,:] * delta(j,i) 
+===========
+Between 1-body and 2-body operators -- ADJ ADJ
+operator number  4
+hs[1][i,j,b,c] = 2 * H[a,k] 
+hs[1][i,k,b,c] = 2 * H[a,j] 
+hs[1][j,k,a,b] = 2 * H[c,i] 
+hs[1][j,k,a,c] = 2 * H[b,i] 
+===========
+Between 2-body and 1-body operators -- ADJ NOR
+operator number  20
+hs[1][i,j,k,:] = 1 * H[b,:] * delta(a,c) 
+hs[1][i,j,a,k] = 2 * H[b,c] 
+hs[1][c,j,a,:] = -1 * H[b,:] * delta(k,i) 
+hs[1][c,i,a,:] = -1 * H[b,:] * delta(k,j) 
+hs[1][i,j,k,:] = 1 * H[a,:] * delta(b,c) 
+hs[1][i,j,b,k] = 2 * H[a,c] 
+hs[1][c,j,b,:] = -1 * H[a,:] * delta(k,i) 
+hs[1][c,i,b,:] = -1 * H[a,:] * delta(k,j) 
+hs[1][i,:,b,k] = -1 * H[:,j] * delta(a,c) 
+hs[1][i,:,a,k] = -1 * H[:,j] * delta(b,c) 
+hs[1][c,:,a,b] = 1 * H[:,j] * delta(k,i) 
+hs[1][c,i,a,b] = 2 * H[k,j] 
+hs[1][j,:,b,k] = -1 * H[:,i] * delta(a,c) 
+hs[1][j,:,a,k] = -1 * H[:,i] * delta(b,c) 
+hs[1][c,:,a,b] = 1 * H[:,i] * delta(k,j) 
+hs[1][c,j,a,b] = 2 * H[k,i] 
+hs[1][i,:,a,b] = -1 * H[:,c] * delta(k,j) 
+hs[1][j,:,a,b] = -1 * H[:,c] * delta(k,i) 
+hs[1][i,j,a,:] = -1 * H[k,:] * delta(b,c) 
+hs[1][i,j,b,:] = -1 * H[k,:] * delta(a,c) 
+===========
+Between 1-body and 2-body operators -- ADJ ADJ
+operator number  14
+hs[1][i,j,a,k] = 2 * H[b,k] 
+hs[1][j,k,a,:] = -1 * H[b,:] * delta(k,i) 
+hs[1][i,k,a,:] = -1 * H[b,:] * delta(k,j) 
+hs[1][i,j,b,k] = 2 * H[a,k] 
+hs[1][j,k,b,:] = -1 * H[a,:] * delta(k,i) 
+hs[1][i,k,b,:] = -1 * H[a,:] * delta(k,j) 
+hs[1][k,:,a,b] = 1 * H[:,j] * delta(k,i) 
+hs[1][i,k,a,b] = 2 * H[k,j] 
+hs[1][k,:,a,b] = 1 * H[:,i] * delta(k,j) 
+hs[1][j,k,a,b] = 2 * H[k,i] 
+hs[1][i,:,a,b] = -1 * H[:,j] 
+hs[1][j,:,a,b] = -1 * H[:,i] 
+hs[1][i,j,a,:] = -1 * H[b,:] 
+hs[1][i,j,b,:] = -1 * H[a,:] 
+===========
+Between 2-body operators -- ADJ NOR
+operator number  56
+hs[2][d,i,j,k,l,:] = 1 * H[b,:] * delta(a,c) 
+hs[2][c,i,j,k,l,:] = 1 * H[b,:] * delta(a,d) 
+hs[2][d,i,j,a,k,l] = 2 * H[b,c] 
+hs[2][c,i,j,a,k,l] = 2 * H[b,d] 
+hs[2][c,d,j,a,l,:] = -1 * H[b,:] * delta(k,i) 
+hs[2][c,d,i,a,l,:] = -1 * H[b,:] * delta(k,j) 
+hs[2][c,d,j,a,k,:] = -1 * H[b,:] * delta(l,i) 
+hs[2][c,d,i,a,k,:] = -1 * H[b,:] * delta(l,j) 
+hs[2][d,i,j,k,l,:] = 1 * H[a,:] * delta(b,c) 
+hs[2][c,i,j,k,l,:] = 1 * H[a,:] * delta(b,d) 
+hs[2][d,i,j,b,k,l] = 2 * H[a,c] 
+hs[2][c,i,j,b,k,l] = 2 * H[a,d] 
+hs[2][c,d,j,b,l,:] = -1 * H[a,:] * delta(k,i) 
+hs[2][c,d,i,b,l,:] = -1 * H[a,:] * delta(k,j) 
+hs[2][c,d,j,b,k,:] = -1 * H[a,:] * delta(l,i) 
+hs[2][c,d,i,b,k,:] = -1 * H[a,:] * delta(l,j) 
+hs[2][d,i,:,b,k,l] = -1 * H[:,j] * delta(a,c) 
+hs[2][c,i,:,b,k,l] = -1 * H[:,j] * delta(a,d) 
+hs[2][d,i,:,a,k,l] = -1 * H[:,j] * delta(b,c) 
+hs[2][c,i,:,a,k,l] = -1 * H[:,j] * delta(b,d) 
+hs[2][c,d,:,a,b,l] = 1 * H[:,j] * delta(k,i) 
+hs[2][c,d,i,a,b,l] = 2 * H[k,j] 
+hs[2][c,d,:,a,b,k] = 1 * H[:,j] * delta(l,i) 
+hs[2][c,d,i,a,b,k] = 2 * H[l,j] 
+hs[2][d,j,:,b,k,l] = -1 * H[:,i] * delta(a,c) 
+hs[2][c,j,:,b,k,l] = -1 * H[:,i] * delta(a,d) 
+hs[2][d,j,:,a,k,l] = -1 * H[:,i] * delta(b,c) 
+hs[2][c,j,:,a,k,l] = -1 * H[:,i] * delta(b,d) 
+hs[2][c,d,:,a,b,l] = 1 * H[:,i] * delta(k,j) 
+hs[2][c,d,j,a,b,l] = 2 * H[k,i] 
+hs[2][c,d,:,a,b,k] = 1 * H[:,i] * delta(l,j) 
+hs[2][c,d,j,a,b,k] = 2 * H[l,i] 
+hs[2][i,j,:,a,k,l] = 1 * H[:,c] * delta(b,d) 
+hs[2][i,j,:,b,k,l] = 1 * H[:,c] * delta(a,d) 
+hs[2][d,i,:,a,b,l] = -1 * H[:,c] * delta(k,j) 
+hs[2][d,j,:,a,b,l] = -1 * H[:,c] * delta(k,i) 
+hs[2][d,i,:,a,b,k] = -1 * H[:,c] * delta(l,j) 
+hs[2][d,j,:,a,b,k] = -1 * H[:,c] * delta(l,i) 
+hs[2][i,j,:,a,k,l] = 1 * H[:,d] * delta(b,c) 
+hs[2][i,j,:,b,k,l] = 1 * H[:,d] * delta(a,c) 
+hs[2][c,i,:,a,b,l] = -1 * H[:,d] * delta(k,j) 
+hs[2][c,j,:,a,b,l] = -1 * H[:,d] * delta(k,i) 
+hs[2][c,i,:,a,b,k] = -1 * H[:,d] * delta(l,j) 
+hs[2][c,j,:,a,b,k] = -1 * H[:,d] * delta(l,i) 
+hs[2][d,i,j,a,l,:] = -1 * H[k,:] * delta(b,c) 
+hs[2][c,i,j,a,l,:] = -1 * H[k,:] * delta(b,d) 
+hs[2][d,i,j,b,l,:] = -1 * H[k,:] * delta(a,c) 
+hs[2][c,i,j,b,l,:] = -1 * H[k,:] * delta(a,d) 
+hs[2][c,d,i,a,b,:] = 1 * H[k,:] * delta(l,j) 
+hs[2][c,d,j,a,b,:] = 1 * H[k,:] * delta(l,i) 
+hs[2][d,i,j,a,k,:] = -1 * H[l,:] * delta(b,c) 
+hs[2][c,i,j,a,k,:] = -1 * H[l,:] * delta(b,d) 
+hs[2][d,i,j,b,k,:] = -1 * H[l,:] * delta(a,c) 
+hs[2][c,i,j,b,k,:] = -1 * H[l,:] * delta(a,d) 
+hs[2][c,d,i,a,b,:] = 1 * H[l,:] * delta(k,j) 
+hs[2][c,d,j,a,b,:] = 1 * H[l,:] * delta(k,i) 
+===========
+Between 1-body and 2-body operators -- ADJ ADJ
+operator number  8
+hs[2][a,b,d,j,k,l] = 2 * H[i,c] 
+hs[2][a,b,c,j,k,l] = 2 * H[i,d] 
+hs[2][a,b,d,i,k,l] = 2 * H[j,c] 
+hs[2][a,b,c,i,k,l] = 2 * H[j,d] 
+hs[2][b,c,d,i,j,l] = 2 * H[k,a] 
+hs[2][b,c,d,i,j,k] = 2 * H[l,a] 
+hs[2][a,c,d,i,j,l] = 2 * H[k,b] 
+hs[2][a,c,d,i,j,k] = 2 * H[l,b] 
+===========

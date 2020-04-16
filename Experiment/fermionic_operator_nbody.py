@@ -25,9 +25,9 @@ from qiskit.tools.events import TextProgressBar
 
 from qiskit.aqua import aqua_globals
 from qiskit.aqua.operators import WeightedPauliOperator
-#from .qiskit_chemistry_error import QiskitChemistryError
-#from .bksf import bksf_mapping
-#from .particle_hole import particle_hole_transformation
+from qiskit.chemistry.qiskit_chemistry_error import QiskitChemistryError
+from qiskit.chemistry.bksf import bksf_mapping
+from qiskit.chemistry.particle_hole import particle_hole_transformation
 
 logger = logging.getLogger(__name__)
 
@@ -68,7 +68,8 @@ class FermionicOperatorNBody:
 
         self._hs = hs
         self._ph_trans_shift = ph_trans_shift
-        self._modes = self._hs[0].shape[0]
+        for h in self._hs:
+            if(h is not None): self._modes = h.shape[0]
         self._map_type = None
 
     @property
@@ -279,12 +280,33 @@ class FermionicOperatorNBody:
         pauli_list = WeightedPauliOperator(paulis=[])
 
         for h in self._hs:
-            for indexes in list(itertools.product(range(n), repeat=len(h.shape))):
-                h_a = [h[indexes]]
-                for i in indexes:
-                    h_a.append(a_list[i])
+            if(h is not None):
+               results = parallel_map(FermionicOperatorNBody._n_body_mapping,
+                                      [FermionicOperatorNBody._prep_mapping(h[indexes],a_list,indexes)
+                                       for indexes in list(itertools.product(range(n), repeat=len(h.shape)))
+                                       if h[indexes] != 0], num_processes=aqua_globals.num_processes)
+               for result in results:
+                   pauli_list += result
 
-                pauli_list += FermionicOperatorNBody._n_body_mapping(h_a)
+        '''
+        for h in self._hs:
+            if h is not None:
+               indexes_list = np.argwhere(np.abs(h)>threshold)
+               print(h.shape,len(indexes_list))
+               for indexes in indexes_list:
+                   h_a = [h[tuple(indexes)]]
+                   for i in indexes:
+                       h_a.append(a_list[i])
+                   pauli_list += FermionicOperatorNBody._n_body_mapping(h_a)
+
+        for h in self._hs:
+            if(h is not None):
+               results = parallel_map(FermionicOperatorNBody._n_body_mapping,
+                                      [FermionicOperatorNBody._prep_mapping(h[indexes],a_list,indexes)
+                                       for indexes in np.argwhere(np.abs(h)>threshold)], num_processes=aqua_globals.num_processes)
+               for result in results:
+                   pauli_list += result
+        ''' 
 
         pauli_list.chop(threshold=threshold)
 
@@ -293,6 +315,15 @@ class FermionicOperatorNBody:
             pauli_list += WeightedPauliOperator(paulis=[pauli_term])
 
         return pauli_list
+
+    @staticmethod
+    def _prep_mapping(h, a_list, indexes):
+
+        h_a = [h]
+        for i in indexes:
+            h_a.append(a_list[i])
+
+        return h_a
 
     @staticmethod
     def _n_body_mapping(h_a):

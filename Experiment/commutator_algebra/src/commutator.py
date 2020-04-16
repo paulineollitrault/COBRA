@@ -28,7 +28,7 @@ class Operator_String:
     def Print(self,message=''):
         nop = len(self.operators)
         idx = [s[1] for s in self.operators]
-        s = 'hs['+str(nop//2-1)+']['
+        s = ' hs['+str(nop//2-1)+']['
         for i in idx:
             if(i in ['p','r','q','s']): s+=':,'
             else:                       s+=str(i)+','
@@ -42,7 +42,22 @@ class Operator_String:
                     else:                         s+=jdx+','
                 s=s[:len(s)-1]+'] *'
         s=s[:len(s)-1]
-        print(s)
+        n_semi = len([x for x in s if x==':'])//2
+        mask = s[7:7+4*(nop//2)-1]
+        dummy = ''
+        dummy_reservoir = ['x','y','z','w','v','u']
+        used_dummy = ''
+        nu = 0
+        for k,m in enumerate(list(mask)):
+#            print(mask,k,m)
+            if(m==':'):
+               mask=mask[:k]+dummy_reservoir[nu]+mask[k+1:]
+               used_dummy += (dummy_reservoir[nu]+',')
+               nu += 1
+        s += '; idx['+str(str(nop//2-1))+'] += [('+mask+') for '+used_dummy[:len(used_dummy)-1]+' in itertools.product(range(n),repeat='+str(nu)+')]'
+        print(s) #used_dummy,">>>",mask,n_semi)
+#        exit()
+#        print(s)
 
     def Copy(self):
         Y = Operator_String()

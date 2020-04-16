@@ -1,0 +1,47 @@
+Logfile of process 0 of 4 on Marios-MacBook-Pro.local.
+HF energy -1.125324
+Hamiltonian
+II	(-1.0614170010560642+0j)
+IZ	(0.3947387786793467+0j)
+ZI	(-0.3947387786793468+0j)
+ZZ	(-0.011284476946295113+0j)
+XX	(0.18154541627231546+0j)
+State
+        ┌─────────────┐
+q_0: |0>┤ U3(pi,0,pi) ├
+        └─────────────┘
+q_1: |0>───────────────
+                       
+Excitation number 3
+Excitation 0 --- 1 0
+Excitation 1 --- 3 2
+Excitation 2 --- 1 3 0 2
+Total matrix elements 6
+Matrix element connecting excitations 0 and 0
+Matrix element connecting excitations 1 and 2
+V,W elements 0 0 --- time for FermionicOperator 0.000014
+V,W elements 0 0 --- time for Mapping 0.043080
+V,W elements 1 2 --- time for FermionicOperator 0.000045
+V,W elements 1 2 --- time for Mapping 0.063157
+M,Q elements (ne) 0 0 --- time for FermionicOperator 0.000213
+M,Q elements (ne) 0 0 --- time for Mapping 0.057529
+M,Q elements (ne) 1 2 --- time for FermionicOperator 0.000181
+M,Q elements (ne) 1 2 --- time for Mapping 0.087704
+M,Q elements (sz) 0 0 --- time for FermionicOperator 0.000152
+M,Q elements (sz) 0 0 --- time for Mapping 0.059901
+M,Q elements (sz) 1 2 --- time for FermionicOperator 0.000352
+M,Q elements (sz) 1 2 --- time for Mapping 0.055720
+M,Q elements (H) 0 0 --- time for FermionicOperator 0.001184
+M,Q elements (H) 0 0 --- time for Mapping 0.191718
+M,Q elements (H) 1 2 --- time for FermionicOperator 0.002730
+M,Q elements (H) 1 2 --- time for Mapping 0.298156
+M,Q elements (ss) 0 0 --- time for FermionicOperator 0.000730
+M,Q elements (ss) 0 0 --- time for Mapping 0.119323
+M,Q elements (ss) 1 2 --- time for FermionicOperator 0.001921
+M,Q elements (ss) 1 2 --- time for Mapping 0.237374
+I,J,V[I,J] = 0 0 1.000000 +/- 0.000000
+I,J,V[I,J] = 1 2 0.000000 +/- 0.000000
+Total time per matrix element
+Overlap  (FO) 0.000017 (MAP) 0.032097
+One-body (FO) 0.001465 (MAP) 0.184397
+Two-body (FO) 0.001815 (MAP) 0.206430

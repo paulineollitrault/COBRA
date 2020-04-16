@@ -336,8 +336,8 @@ def hComPhys(ha,hb, stat = 'fermi', threshold=1e-12):
 
 def hSimplify(h, stat = 'fermi', threshold=1e-12):
 
-    print("I AM IN hSimplify")
-    print("H in ",h.shape)
+    #print("I AM IN hSimplify")
+    #print("H in ",h.shape)
     res = np.zeros_like(h)
     if stat == 'fermi':
         eta = -1
@@ -345,14 +345,14 @@ def hSimplify(h, stat = 'fermi', threshold=1e-12):
         eta = +1
    
 
-    print("RES ",res.shape)
+    #print("RES ",res.shape)
 
     dim = len(h.shape)//2
     nferm = h.shape[0]
 
-    print("I AM TRYING TO LOOP OVER ")
-    print(len(list(it.combinations(np.arange(nferm), dim))))
-    print("TWICE")
+    #print("I AM TRYING TO LOOP OVER ")
+    #print(len(list(it.combinations(np.arange(nferm), dim))))
+    #print("TWICE")
 
     for xL in it.combinations(np.arange(nferm), dim):
         for xR in it.combinations(np.arange(nferm), dim):
@@ -419,7 +419,7 @@ def ten_commutator(fop_a, fop_b, fop_c=None, stat = 'fermi', Chem=True, threshol
 
     t1 = time.time()
 
-    print("TTT preparation time",t1-t0)    
+    #print("TTT preparation time",t1-t0)    
         
     if fop_c is None:
         #just [A,B]
@@ -432,25 +432,25 @@ def ten_commutator(fop_a, fop_b, fop_c=None, stat = 'fermi', Chem=True, threshol
                 res.append(hComPhys(x,y,stat,threshold))
 
         t3 = time.time()
-        print("TTT list of results construction ",t3-t2)
+        #print("TTT list of results construction ",t3-t2)
 
-        print("2 args, before simplification ",len(res))
+        #print("2 args, before simplification ",len(res))
         res = mat_list_simplify(res,nf,threshold)
-        print("2 args, after simplification  ",len(res))
+        #print("2 args, after simplification  ",len(res))
         
         t4 = time.time()
-        print("TTT list of results simplification ",t4-t3)
+        #print("TTT list of results simplification ",t4-t3)
 
         if len(res)==0:
             #return empty fermionic operator
             return FermionicOperator(np.zeros((nf,nf)))
         else:
-            print("SHAPES ",[x.shape for x in res])
+            #print("SHAPES ",[x.shape for x in res])
             shapes   = [len(x.shape) for x in res]
             max_size = max(shapes)
             hs       = [np.zeros(tuple([nf]*s)) for s in [1,2,3,4]]
 
-            print("AB indices in tensors ",shapes)
+            #print("AB indices in tensors ",shapes)
 
             for x in res:
                 t5 = time.time()
@@ -459,7 +459,7 @@ def ten_commutator(fop_a, fop_b, fop_c=None, stat = 'fermi', Chem=True, threshol
                 hs[len(x.shape)//2-1] = hout
                 t7 = time.time()
 
-                print("TTT hSimplify ",t7-t6,t6-t5)
+                #print("TTT hSimplify ",t7-t6,t6-t5)
 
             if Chem==True:
                 hs = [ toChem(h) for h in hs]
@@ -494,9 +494,9 @@ def ten_commutator(fop_a, fop_b, fop_c=None, stat = 'fermi', Chem=True, threshol
                     comA_BC.append(hComPhys(x,y, stat, threshold))
         
         comABC = comAB_C+comA_BC
-        print("3 args, length before simplification ",len(comABC))        
+        #print("3 args, length before simplification ",len(comABC))        
         comABC = mat_list_simplify(comABC,nf,threshold)
-        print("3 args, length after simplification ",len(comABC))
+        #print("3 args, length after simplification ",len(comABC))
 
         if len(comABC)==0:
             #return empty fermionic operator
@@ -506,7 +506,7 @@ def ten_commutator(fop_a, fop_b, fop_c=None, stat = 'fermi', Chem=True, threshol
             max_size = max(shapes)
             hs       = [np.zeros(tuple([nf]*s)) for s in shapes]
 
-            print("ABC indices in tensors ",shapes)
+            #print("ABC indices in tensors ",shapes)
 
             for m,x in enumerate(comABC):
                 hout = 0.5*hSimplify(x,stat,threshold)
