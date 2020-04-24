@@ -1,0 +1,95 @@
+Logfile of process 1 of 4 on Marios-MacBook-Pro.local.
+HF energy -1.066109
+Hamiltonian
+IIII	(-0.8567854005948078+0j)
+IIIZ	(0.13716572937099497+0j)
+IIZI	(-0.13036292057109142+0j)
+IZII	(0.137165729370995+0j)
+ZIII	(-0.13036292057109145+0j)
+IIZZ	(0.10622904490856083+0j)
+IZIZ	(0.15660062488237958+0j)
+XXYY	(0.0491976458713676+0j)
+YYYY	(0.0491976458713676+0j)
+XXXX	(0.0491976458713676+0j)
+YYXX	(0.0491976458713676+0j)
+ZIIZ	(0.15542669077992843+0j)
+IZZI	(0.15542669077992843+0j)
+ZIZI	(0.16326768673564368+0j)
+ZZII	(0.10622904490856083+0j)
+State
+        ┌─────────────┐
+q_0: |0>┤ U3(pi,0,pi) ├
+        └─────────────┘
+q_1: |0>───────────────
+        ┌─────────────┐
+q_2: |0>┤ U3(pi,0,pi) ├
+        └─────────────┘
+q_3: |0>───────────────
+                       
+Excitation number 3
+Excitation 0 --- 1 0
+Excitation 1 --- 3 2
+Excitation 2 --- 1 3 2 0
+Total matrix elements 6
+Matrix element connecting excitations 0 and 1
+Matrix element connecting excitations 2 and 2
+task: overlap elements 0 1 --- time for FermionicOperator 0.000036
+task: overlap elements 0 1 --- time for Mapping 0.000677
+task: overlap elements 2 2 --- time for FermionicOperator 0.000086
+task: overlap elements 2 2 --- time for Mapping 0.119951
+task: overlap,adj_nor --- I,J,x[I,J] = 0 1 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 1 0 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 2 2 1.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 2 2 1.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 0 1 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 1 0 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 2 2 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 2 2 0.000000 +/- 0.000000
+task: diagnosis_number elements 0 1 --- time for FermionicOperator 0.000309
+task: diagnosis_number elements 0 1 --- time for Mapping 0.002282
+task: diagnosis_number elements 2 2 --- time for FermionicOperator 0.001908
+task: diagnosis_number elements 2 2 --- time for Mapping 0.167706
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 0 1 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 1 0 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 2 2 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 2 2 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 0 1 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 1 0 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 2 2 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 2 2 0.000000 +/- 0.000000
+task: diagnosis_spin-z elements 0 1 --- time for FermionicOperator 0.000338
+task: diagnosis_spin-z elements 0 1 --- time for Mapping 0.005835
+task: diagnosis_spin-z elements 2 2 --- time for FermionicOperator 0.002307
+task: diagnosis_spin-z elements 2 2 --- time for Mapping 0.139160
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 0 1 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 1 0 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 2 2 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 2 2 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 0 1 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 1 0 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 2 2 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 2 2 0.000000 +/- 0.000000
+task: hamiltonian elements 0 1 --- time for FermionicOperator 0.002527
+task: hamiltonian elements 0 1 --- time for Mapping 0.165294
+task: hamiltonian elements 2 2 --- time for FermionicOperator 0.019022
+task: hamiltonian elements 2 2 --- time for Mapping 0.813352
+task: hamiltonian,adj_nor --- I,J,x[I,J] = 0 1 0.393581 +/- 0.000000
+task: hamiltonian,adj_nor --- I,J,x[I,J] = 1 0 0.393581 +/- 0.000000
+task: hamiltonian,adj_nor --- I,J,x[I,J] = 2 2 2.140229 +/- 0.000000
+task: hamiltonian,adj_nor --- I,J,x[I,J] = 2 2 2.140229 +/- 0.000000
+task: hamiltonian,adj_adj --- I,J,x[I,J] = 0 1 1.113070 +/- 0.000000
+task: hamiltonian,adj_adj --- I,J,x[I,J] = 1 0 1.113070 +/- 0.000000
+task: hamiltonian,adj_adj --- I,J,x[I,J] = 2 2 -0.000000 +/- 0.000000
+task: hamiltonian,adj_adj --- I,J,x[I,J] = 2 2 -0.000000 +/- 0.000000
+task: diagnosis_spin-squared elements 0 1 --- time for FermionicOperator 0.000506
+task: diagnosis_spin-squared elements 0 1 --- time for Mapping 0.037499
+task: diagnosis_spin-squared elements 2 2 --- time for FermionicOperator 0.007885
+task: diagnosis_spin-squared elements 2 2 --- time for Mapping 0.351546
+task: diagnosis_spin-squared,adj_nor --- I,J,x[I,J] = 0 1 2.000000 +/- 0.000000
+task: diagnosis_spin-squared,adj_nor --- I,J,x[I,J] = 1 0 2.000000 +/- 0.000000
+task: diagnosis_spin-squared,adj_nor --- I,J,x[I,J] = 2 2 0.000000 +/- 0.000000
+task: diagnosis_spin-squared,adj_nor --- I,J,x[I,J] = 2 2 0.000000 +/- 0.000000
+task: diagnosis_spin-squared,adj_adj --- I,J,x[I,J] = 0 1 0.000000 +/- 0.000000
+task: diagnosis_spin-squared,adj_adj --- I,J,x[I,J] = 1 0 0.000000 +/- 0.000000
+task: diagnosis_spin-squared,adj_adj --- I,J,x[I,J] = 2 2 0.000000 +/- 0.000000
+task: diagnosis_spin-squared,adj_adj --- I,J,x[I,J] = 2 2 0.000000 +/- 0.000000
