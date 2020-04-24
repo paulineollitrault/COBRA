@@ -875,6 +875,8 @@ def triple_commutator_adj_twobody_adj(n,Emu,Enu,H):
        hs[3][i,:,j,d,k,c,:,a] += 2*H[b,:,:,l]; idx[3] += [(i,u,j,d,k,c,v,a) for (u,v) in itertools.product(range(n),repeat=2)]
        hs[3][i,:,j,:,k,c,l,b] += -2*H[a,:,d,:].transpose(1,0); idx[3] += [(i,u,j,v,k,c,l,b) for (u,v) in itertools.product(range(n),repeat=2)]
        hs[3][i,:,j,:,k,d,l,b] += 2*H[a,:,c,:].transpose(1,0); idx[3] += [(i,u,j,v,k,d,l,b) for (u,v) in itertools.product(range(n),repeat=2)]
+
     for k in range(4):
         if(idx[k] is not None): idx[k] = list(set(idx[k]))
+
     return FermionicOperatorNBody(hs),idx

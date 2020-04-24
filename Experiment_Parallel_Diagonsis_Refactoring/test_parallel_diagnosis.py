@@ -20,7 +20,7 @@ from qiskit.chemistry.core                      import Hamiltonian, Transformati
 from qiskit.chemistry.components.initial_states import HartreeFock
 from qiskit.aqua                                import QuantumInstance,aqua_globals
 
-nh  = 2
+nh  = 4
 geo = ''
 for ih in range(nh):
     geo += 'H 0.0 0.0 '+str(ih*1.0)+'; '
@@ -34,7 +34,10 @@ mf = scf.RHF(mol)
 E = mf.kernel()
 
 cisolver = fci.FCI(mol,mf.mo_coeff)
-E,ci     = cisolver.kernel(nroots=4)
+E,ci     = cisolver.kernel(nroots=6)
+
+print("FCI excitation energies ")
+print(E-min(E))
 
 c = mf.mo_coeff
 
@@ -45,7 +48,9 @@ h1 = reduce(numpy.dot,(c.T,mf.get_hcore(),c))
 h2 = ao2mo.incore.full(mf._eri,c)
 
 H_fci = fci.direct_spin1.pspace(h1,h2,mol.nao_nr(),mol.nelectron)[1]
+print("diagonal of FCI matrix")
 print(numpy.diag(H_fci)-H_fci[0,0])
+
 
 '''
 fs = fci.addons.fix_spin_(fci.FCI(mol, m.mo_coeff), .5)
@@ -55,8 +60,6 @@ for i, x in enumerate(c):
     print('state %d, E = %.12f  2S+1 = %.7f' %
           (i, e[i], fci.spin_op.spin_square0(x, norb, nelec)[1]))
 '''
-
-print(E,ci[0].shape)
 
 driver    = PySCFDriver(atom=geo,unit=UnitsType.ANGSTROM,charge=0,spin=0,basis='sto-3g',hf_method=HFMethodType.RHF)
 molecule  = driver.run()

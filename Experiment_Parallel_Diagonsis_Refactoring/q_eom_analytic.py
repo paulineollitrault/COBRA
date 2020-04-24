@@ -116,11 +116,9 @@ class qEOM:
               # ----- mapping
               adj_nor_oper = adj_nor_oper.mapping(map_type=qubit_mapping.value,threshold=epsilon,idx=adj_nor_idx)
               adj_adj_oper = adj_adj_oper.mapping(map_type=qubit_mapping.value,threshold=epsilon,idx=adj_adj_idx)
-              #print("building operator ",I,J,adj_nor_oper.print_details())
               if qubit_mapping.value == 'parity' and two_qubit_reduction:
                  adj_nor_oper = Z2Symmetries.two_qubit_reduction(adj_nor_oper,num_particles)
                  adj_adj_oper = Z2Symmetries.two_qubit_reduction(adj_adj_oper,num_particles)
-              #print("qubit reduction ",I,J,adj_nor_oper.print_details())
               self.matrix_elements_adj_nor[task].append(adj_nor_oper)
               self.matrix_elements_adj_adj[task].append(adj_adj_oper)
               t2 = time.time()
@@ -132,7 +130,7 @@ class qEOM:
  
       def measure_matrices(self,quantum_instance,task,qubit_mapping,two_qubit_reduction,num_particles,epsilon):
 
-          self.matrices_adj_nor[task],self.matrices_adj_adj[task] = np.zeros((self.nexc,self.nexc,2),dtype=complex),np.zeros((self.nexc,self.nexc,2),dtype=complex)
+          self.matrices_adj_nor[task],self.matrices_adj_adj[task] = np.zeros((self.nexc,self.nexc,2)),np.zeros((self.nexc,self.nexc,2))
 
           for (label,target,operator_list) in zip(['adj_nor','adj_adj'],[self.matrices_adj_nor[task],self.matrices_adj_adj[task]],
                                                   [self.matrix_elements_adj_nor[task],self.matrix_elements_adj_adj[task]]):
@@ -149,22 +147,19 @@ class qEOM:
                   result                   = quantum_instance.execute(to_be_simulated_circuits)
               # -----
               for idx,oper in enumerate(operator_list):
-                  #print("measuring operator ",idx)
                   if(not oper.is_empty()):
                      mean,std = oper.evaluate_with_result(result=result,statevector_mode=quantum_instance.is_statevector,
                                 use_simulator_snapshot_mode=False,circuit_name_prefix=str(idx))
+                     mean,std = np.real(mean),np.abs(std)
                      I,J = self.elements[idx]
-                     #print("mean,std ",I,J,mean,std)
                      target[I,J,:] = mean,std
-                     #print(target[I,J,:])
-                     #print(task,'overlap',task!='overlap')
                      if(task!='overlap'):  target[I,J,:] /=  2.0
-                     if(label=='adj_nor'): target[J,I,0]  =  np.conj(target[J,I,0]); target[J,I,1] = target[I,J,1]
-                     if(label=='adj_adj'): target[J,I,0]  = -target[J,I,0];          target[J,I,1] = target[I,J,1]
-                     #print(target[I,J,:])
+                     if(label=='adj_nor'): target[J,I,0]  =  target[I,J,0]; target[J,I,1] = target[I,J,1]
+                     if(task=='overlap' and label=='adj_adj'): target[J,I,0]  = -target[I,J,0];          target[J,I,1] = target[I,J,1]
+                     if(task!='overlap' and label=='adj_adj'): target[J,I,0]  =  target[I,J,0];          target[J,I,1] = target[I,J,1]
               for I,J in self.elements:
-                     self.logfile.write("task: "+task+","+label+" --- I,J,x[I,J] = %d %d (%f,%f) +/- %f\n" % (I,J,np.real(target[I,J,0]),np.imag(target[I,J,0]),np.abs(target[I,J,1])))
-                     self.logfile.write("task: "+task+","+label+" --- I,J,x[I,J] = %d %d (%f,%f) +/- %f\n" % (J,I,np.real(target[J,I,0]),np.imag(target[J,I,0]),np.abs(target[J,I,1])))
+                     self.logfile.write("task: "+task+","+label+" --- I,J,x[I,J] = %d %d %f +/- %f\n" % (I,J,target[I,J,0],target[I,J,1]))
+                     self.logfile.write("task: "+task+","+label+" --- I,J,x[I,J] = %d %d %f +/- %f\n" % (J,I,target[J,I,0],target[J,I,1]))
 
       # ==========================================================
 
@@ -178,39 +173,52 @@ class qEOM:
           self.comm.Barrier()
           V_matrix = self.comm.reduce(self.matrices_adj_nor['overlap'],op=MPI.SUM,root=0)
           W_matrix = self.comm.reduce(self.matrices_adj_adj['overlap'],op=MPI.SUM,root=0)
-          M_matrix = self.comm.reduce(self.matrices_adj_nor['hamiltonian'],op=MPI.SUM,root=0)
-          Q_matrix = self.comm.reduce(self.matrices_adj_adj['hamiltonian'],op=MPI.SUM,root=0)
           self.comm.Barrier()
 
-          for i in range(V_matrix.shape[0]):
-              for j in range(V_matrix.shape[1]):
-                  print(i,j,V_matrix[i,j],W_matrix[i,j],M_matrix[i,j],Q_matrix[i,j])
+          if(self.rank==0):
+             for i in range(V_matrix.shape[0]):
+                 for j in range(V_matrix.shape[1]):
+                     self.logfile.write("overlap matrix %d %d %f,%f \n" % (i,j,V_matrix[i,j,0],W_matrix[i,j,0]))
 
-          Hamiltonian = np.zeros((2*self.nexc,2*self.nexc),dtype=complex)
-          Overlap     = np.zeros((2*self.nexc,2*self.nexc),dtype=complex)
+             Overlap  = np.zeros((2*self.nexc,2*self.nexc))
+   
+             Overlap[:self.nexc,:self.nexc] =  V_matrix[:,:,0]
+             Overlap[:self.nexc,self.nexc:] =  W_matrix[:,:,0]
+             Overlap[self.nexc:,:self.nexc] = -W_matrix[:,:,0]
+             Overlap[self.nexc:,self.nexc:] = -V_matrix[:,:,0]
 
-          Overlap[:self.nexc,:self.nexc] = V_matrix[:,:,0]
-          Overlap[:self.nexc,self.nexc:] = W_matrix[:,:,0]
-          Overlap[self.nexc:,:self.nexc] = -np.conj(W_matrix[:,:,0])
-          Overlap[self.nexc:,self.nexc:] = -np.conj(V_matrix[:,:,0])
+          for task in ['hamiltonian','diagnosis_number','diagnosis_spin-z','diagnosis_spin-squared']:
+              M_matrix = self.comm.reduce(self.matrices_adj_nor[task],op=MPI.SUM,root=0)
+              Q_matrix = self.comm.reduce(self.matrices_adj_adj[task],op=MPI.SUM,root=0)
+              self.comm.Barrier()
 
-          Hamiltonian[:self.nexc,:self.nexc] = M_matrix[:,:,0]
-          Hamiltonian[:self.nexc,self.nexc:] = W_matrix[:,:,0]
-          Hamiltonian[self.nexc:,:self.nexc] = np.conj(Q_matrix[:,:,0])
-          Hamiltonian[self.nexc:,self.nexc:] = np.conj(M_matrix[:,:,0])
-
-          from scipy import linalg as LA
-
-          eps,U = LA.eig(Hamiltonian,Overlap)
-          print(eps)
-
-
-          exit()
-           
+              if(self.rank==0):
+    
+                 for i in range(V_matrix.shape[0]):
+                     for j in range(V_matrix.shape[1]):
+                         self.logfile.write("%s matrix %d %d %f, %f \n" % (task,i,j,M_matrix[i,j,0],Q_matrix[i,j,0]))
+       
+                 Observable = np.zeros((2*self.nexc,2*self.nexc))
+                 Observable[:self.nexc,:self.nexc] = M_matrix[:,:,0]
+                 Observable[:self.nexc,self.nexc:] = Q_matrix[:,:,0]
+                 Observable[self.nexc:,:self.nexc] = Q_matrix[:,:,0]
+                 Observable[self.nexc:,self.nexc:] = M_matrix[:,:,0]
+   
+                 if(task=='hamiltonian'):
+                      from scipy import linalg as LA
+                      eps,U = LA.eig(Observable,Overlap)
+                      for k,e in enumerate(eps):
+                          self.logfile.write("eigenvalue %d: (%f,%f) \n" % (k,np.real(e),np.imag(e)))
+                          for i in range(U.shape[0]):
+                              self.logfile.write("   (%f,%f) \n" % (np.real(U[i,k]),np.imag(U[i,k])) ) 
+ 
+                 for k in np.where(np.real(eps)>0)[0]:
+                     zeta = np.einsum('i,ij,j',np.conj(U[:,k]),Observable,U[:,k])/np.einsum('i,ij,j',np.conj(U[:,k]),Overlap,U[:,k])
+                     self.logfile.write("task: %s, eigenvector %d: (%f,%f) \n" % (task,k,np.real(zeta),np.imag(zeta)))
 
       # ==========================================================
 
-      def get_statistics(self,comm):
+      def get_statistics(self):
 
           if(self.rank==0):
              output  = np.zeros((self.nexc,self.nexc,2,2))
@@ -221,16 +229,16 @@ class qEOM:
                 time_matrix = np.zeros((self.nexc,self.nexc,2))
                 for (I,J,t1,t2) in self.time_statistics[task]:
                     time_matrix[I,J,:] = [t1,t2]  
-              comm.Barrier()
+              self.comm.Barrier()
 
               for k in range(1,self.size):
                   if(self.rank==k):
-                     comm.send(self.time_statistics[task],dest=0)
+                     self.comm.send(self.time_statistics[task],dest=0)
                   if(self.rank==0):
                      time_list = comm.recv(source=k)   
                      for (I,J,t1,t2) in time_list:
                          time_matrix[I,J,:] = [t1,t2]
-                  comm.Barrier()
+                  self.comm.Barrier()
               
               if(self.rank==0):
                  time_matrix  = time_matrix+time_matrix.transpose((1,0,2))

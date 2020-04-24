@@ -1,1 +1,944 @@
 Logfile of process 7 of 10 on Marios-MacBook-Pro.local.
+HF energy -2.098546
+Hamiltonian
+IIIIIIII	(-2.6245790607368047+0j)
+IIIIIIIZ	(0.1813648515613788+0j)
+IIIIIYZY	(0.0055621256426341865+0j)
+IIIIIXZX	(0.0055621256426341865+0j)
+IIIIIIZI	(0.0879264473481563+0j)
+IIIIYZYI	(0.017266550727448364+0j)
+IIIIXZXI	(0.017266550727448364+0j)
+IIIIIZII	(-0.07904409253271232+0j)
+IIIIZIII	(-0.3346121308498831+0j)
+IIIZIIII	(0.18136485156137885+0j)
+IYZYIIII	(0.00556212564263418+0j)
+IXZXIIII	(0.00556212564263418+0j)
+IIZIIIII	(0.08792644734815636+0j)
+YZYIIIII	(0.017266550727448357+0j)
+XZXIIIII	(0.017266550727448357+0j)
+IZIIIIII	(-0.07904409253271238+0j)
+ZIIIIIII	(-0.33461213084988317+0j)
+IIIIIIZZ	(0.06963750904548396+0j)
+IIIIYZYZ	(-0.010290902059345174+0j)
+IIIIXZXZ	(-0.010290902059345174+0j)
+IIIIIZIZ	(0.08454049215503269+0j)
+IIIIZIIZ	(0.10647068557074887+0j)
+IIIIIYIY	(0.02204895046515945+0j)
+IIIIIXIX	(0.02204895046515945+0j)
+IIIIYYYY	(-0.024418228025864682+0j)
+IIIIXXYY	(-0.01303012158526122+0j)
+IIIIYXXY	(-0.011388106440603459+0j)
+IIIIXYYX	(-0.011388106440603459+0j)
+IIIIYYXX	(-0.01303012158526122+0j)
+IIIIXXXX	(-0.024418228025864682+0j)
+IIIIZYZY	(0.01123447270172301+0j)
+IIIIZXZX	(0.01123447270172301+0j)
+IIIZIIIZ	(0.1243212104840993+0j)
+IIIZIYZY	(0.020391299294718536+0j)
+IIIZIXZX	(0.020391299294718536+0j)
+IIXXIIYY	(0.039345511854932395+0j)
+IIYYIIYY	(0.039345511854932395+0j)
+IIXXIIXX	(0.039345511854932395+0j)
+IIYYIIXX	(0.039345511854932395+0j)
+IIXXYZZY	(0.010770995988537363+0j)
+IIYYYZZY	(0.010770995988537363+0j)
+IIXXXZZX	(0.010770995988537363+0j)
+IIYYXZZX	(0.010770995988537363+0j)
+IXZXIIIZ	(0.020391299294718536+0j)
+IYZYIIIZ	(0.020391299294718536+0j)
+IXZXIYZY	(0.026958029359518663+0j)
+IYZYIYZY	(0.026958029359518663+0j)
+IXZXIXZX	(0.026958029359518663+0j)
+IYZYIXZX	(0.026958029359518663+0j)
+XZZXIIYY	(0.010770995988537365+0j)
+YZZYIIYY	(0.010770995988537365+0j)
+XZZXIIXX	(0.010770995988537365+0j)
+YZZYIIXX	(0.010770995988537365+0j)
+XZZXYZZY	(0.024267375259422824+0j)
+YZZYYZZY	(0.024267375259422824+0j)
+XZZXXZZX	(0.024267375259422824+0j)
+YZZYXZZX	(0.024267375259422824+0j)
+IIZIIIIZ	(0.10898302090041637+0j)
+IIZIIYZY	(-0.002451289394620848+0j)
+IIZIIXZX	(-0.002451289394620848+0j)
+IXXIIIYY	(0.024500239859780303+0j)
+IYYIIIYY	(0.024500239859780303+0j)
+IXXIIIXX	(0.024500239859780303+0j)
+IYYIIIXX	(0.024500239859780303+0j)
+IXXIYZZY	(-0.013240138226117172+0j)
+IYYIYZZY	(-0.013240138226117172+0j)
+IXXIXZZX	(-0.013240138226117172+0j)
+IYYIXZZX	(-0.013240138226117172+0j)
+XZXIIIIZ	(-0.02106189804788254+0j)
+YZYIIIIZ	(-0.02106189804788254+0j)
+XZXIIYZY	(-0.024628244666720638+0j)
+YZYIIYZY	(-0.024628244666720638+0j)
+XZXIIXZX	(-0.024628244666720638+0j)
+YZYIIXZX	(-0.024628244666720638+0j)
+IZIIIIIZ	(0.11149852151455136+0j)
+IZIIIYZY	(0.0017156558535283526+0j)
+IZIIIXZX	(0.0017156558535283526+0j)
+XXIIIIYY	(-0.03765836625198185+0j)
+YYIIIIYY	(-0.03765836625198185+0j)
+XXIIIIXX	(-0.03765836625198185+0j)
+YYIIIIXX	(-0.03765836625198185+0j)
+XXIIYZZY	(-0.010242353965831666+0j)
+YYIIYZZY	(-0.010242353965831666+0j)
+XXIIXZZX	(-0.010242353965831666+0j)
+YYIIXZZX	(-0.010242353965831666+0j)
+ZIIIIIIZ	(0.1307380608301717+0j)
+ZIIIIYZY	(0.021476826667554672+0j)
+ZIIIIXZX	(0.021476826667554672+0j)
+IIIIIZZI	(0.07762037081485568+0j)
+IIIIZIZI	(0.08982499235931948+0j)
+IIIIYIYI	(-0.025545241511487935+0j)
+IIIIXIXI	(-0.025545241511487935+0j)
+IIIZIIZI	(0.10898302090041637+0j)
+IIIZYZYI	(-0.021061898047882537+0j)
+IIIZXZXI	(-0.021061898047882537+0j)
+IIXXIYYI	(0.0245002398597803+0j)
+IIYYIYYI	(0.0245002398597803+0j)
+IIXXIXXI	(0.0245002398597803+0j)
+IIYYIXXI	(0.0245002398597803+0j)
+IXZXIIZI	(-0.002451289394620848+0j)
+IYZYIIZI	(-0.002451289394620848+0j)
+IXZXYZYI	(-0.02462824466672063+0j)
+IYZYYZYI	(-0.02462824466672063+0j)
+IXZXXZXI	(-0.02462824466672063+0j)
+IYZYXZXI	(-0.02462824466672063+0j)
+XZZXIYYI	(-0.013240138226117172+0j)
+YZZYIYYI	(-0.013240138226117172+0j)
+XZZXIXXI	(-0.013240138226117172+0j)
+YZZYIXXI	(-0.013240138226117172+0j)
+IIZIIIZI	(0.11340654151840215+0j)
+IIZIYZYI	(-0.0010141226263319712+0j)
+IIZIXZXI	(-0.0010141226263319712+0j)
+IXXIIYYI	(0.034320680051846575+0j)
+IYYIIYYI	(0.034320680051846575+0j)
+IXXIIXXI	(0.034320680051846575+0j)
+IYYIIXXI	(0.034320680051846575+0j)
+XZXIIIZI	(-0.0010141226263319712+0j)
+YZYIIIZI	(-0.0010141226263319712+0j)
+XZXIYZYI	(0.02616133069920394+0j)
+YZYIYZYI	(0.02616133069920394+0j)
+XZXIXZXI	(0.02616133069920394+0j)
+YZYIXZXI	(0.02616133069920394+0j)
+IZIIIIZI	(0.11194105086670225+0j)
+IZIIYZYI	(-0.0007036263660333067+0j)
+IZIIXZXI	(-0.0007036263660333067+0j)
+XXIIIYYI	(-0.02484161514545463+0j)
+YYIIIYYI	(-0.02484161514545463+0j)
+XXIIIXXI	(-0.02484161514545463+0j)
+YYIIIXXI	(-0.02484161514545463+0j)
+ZIIIIIZI	(0.11598632305852341+0j)
+ZIIIYZYI	(-0.023384504684863833+0j)
+ZIIIXZXI	(-0.023384504684863833+0j)
+IIIIZZII	(0.07943848698337588+0j)
+IIIZIZII	(0.11149852151455136+0j)
+IIXXYYII	(-0.03765836625198185+0j)
+IIYYYYII	(-0.03765836625198185+0j)
+IIXXXXII	(-0.03765836625198185+0j)
+IIYYXXII	(-0.03765836625198185+0j)
+IXZXIZII	(0.0017156558535283526+0j)
+IYZYIZII	(0.0017156558535283526+0j)
+XZZXYYII	(-0.010242353965831667+0j)
+YZZYYYII	(-0.010242353965831667+0j)
+XZZXXXII	(-0.010242353965831667+0j)
+YZZYXXII	(-0.010242353965831667+0j)
+IIZIIZII	(0.11194105086670225+0j)
+IXXIYYII	(-0.024841615145454632+0j)
+IYYIYYII	(-0.024841615145454632+0j)
+IXXIXXII	(-0.024841615145454632+0j)
+IYYIXXII	(-0.024841615145454632+0j)
+XZXIIZII	(-0.0007036263660333067+0j)
+YZYIIZII	(-0.0007036263660333067+0j)
+IZIIIZII	(0.11685143837724846+0j)
+XXIIYYII	(0.04061611780841478+0j)
+YYIIYYII	(0.04061611780841478+0j)
+XXIIXXII	(0.04061611780841478+0j)
+YYIIXXII	(0.04061611780841478+0j)
+ZIIIIZII	(0.12005460479179066+0j)
+IIIZZIII	(0.1307380608301717+0j)
+IXZXZIII	(0.021476826667554672+0j)
+IYZYZIII	(0.021476826667554672+0j)
+IIZIZIII	(0.11598632305852341+0j)
+XZXIZIII	(-0.023384504684863833+0j)
+YZYIZIII	(-0.023384504684863833+0j)
+IZIIZIII	(0.12005460479179066+0j)
+ZIIIZIII	(0.14526148152123464+0j)
+IIZZIIII	(0.06963750904548396+0j)
+YZYZIIII	(-0.010290902059345174+0j)
+XZXZIIII	(-0.010290902059345174+0j)
+IZIZIIII	(0.08454049215503269+0j)
+ZIIZIIII	(0.10647068557074887+0j)
+IYIYIIII	(0.02204895046515945+0j)
+IXIXIIII	(0.02204895046515945+0j)
+YYYYIIII	(-0.024418228025864682+0j)
+XXYYIIII	(-0.01303012158526122+0j)
+YXXYIIII	(-0.011388106440603459+0j)
+XYYXIIII	(-0.011388106440603459+0j)
+YYXXIIII	(-0.01303012158526122+0j)
+XXXXIIII	(-0.024418228025864682+0j)
+ZYZYIIII	(0.01123447270172301+0j)
+ZXZXIIII	(0.01123447270172301+0j)
+IZZIIIII	(0.07762037081485568+0j)
+ZIZIIIII	(0.08982499235931948+0j)
+YIYIIIII	(-0.025545241511487935+0j)
+XIXIIIII	(-0.025545241511487935+0j)
+ZZIIIIII	(0.07943848698337588+0j)
+State
+        ┌─────────────┐
+q_0: |0>┤ U3(pi,0,pi) ├
+        ├─────────────┤
+q_1: |0>┤ U3(pi,0,pi) ├
+        └─────────────┘
+q_2: |0>───────────────
+                       
+q_3: |0>───────────────
+        ┌─────────────┐
+q_4: |0>┤ U3(pi,0,pi) ├
+        ├─────────────┤
+q_5: |0>┤ U3(pi,0,pi) ├
+        └─────────────┘
+q_6: |0>───────────────
+                       
+q_7: |0>───────────────
+                       
+Excitation number 26
+Excitation 0 --- 2 0
+Excitation 1 --- 2 1
+Excitation 2 --- 3 0
+Excitation 3 --- 3 1
+Excitation 4 --- 6 4
+Excitation 5 --- 6 5
+Excitation 6 --- 7 4
+Excitation 7 --- 7 5
+Excitation 8 --- 2 3 1 0
+Excitation 9 --- 6 7 5 4
+Excitation 10 --- 2 6 4 0
+Excitation 11 --- 2 6 5 0
+Excitation 12 --- 2 6 4 1
+Excitation 13 --- 2 6 5 1
+Excitation 14 --- 2 7 4 0
+Excitation 15 --- 2 7 5 0
+Excitation 16 --- 2 7 4 1
+Excitation 17 --- 2 7 5 1
+Excitation 18 --- 3 6 4 0
+Excitation 19 --- 3 6 5 0
+Excitation 20 --- 3 6 4 1
+Excitation 21 --- 3 6 5 1
+Excitation 22 --- 3 7 4 0
+Excitation 23 --- 3 7 5 0
+Excitation 24 --- 3 7 4 1
+Excitation 25 --- 3 7 5 1
+Total matrix elements 351
+Matrix element connecting excitations 0 and 7
+Matrix element connecting excitations 0 and 17
+Matrix element connecting excitations 1 and 2
+Matrix element connecting excitations 1 and 12
+Matrix element connecting excitations 1 and 22
+Matrix element connecting excitations 2 and 8
+Matrix element connecting excitations 2 and 18
+Matrix element connecting excitations 3 and 5
+Matrix element connecting excitations 3 and 15
+Matrix element connecting excitations 3 and 25
+Matrix element connecting excitations 4 and 13
+Matrix element connecting excitations 4 and 23
+Matrix element connecting excitations 5 and 12
+Matrix element connecting excitations 5 and 22
+Matrix element connecting excitations 6 and 12
+Matrix element connecting excitations 6 and 22
+Matrix element connecting excitations 7 and 13
+Matrix element connecting excitations 7 and 23
+Matrix element connecting excitations 8 and 15
+Matrix element connecting excitations 8 and 25
+Matrix element connecting excitations 9 and 18
+Matrix element connecting excitations 10 and 12
+Matrix element connecting excitations 10 and 22
+Matrix element connecting excitations 11 and 17
+Matrix element connecting excitations 12 and 13
+Matrix element connecting excitations 12 and 23
+Matrix element connecting excitations 13 and 20
+Matrix element connecting excitations 14 and 18
+Matrix element connecting excitations 15 and 17
+Matrix element connecting excitations 16 and 17
+Matrix element connecting excitations 17 and 18
+Matrix element connecting excitations 18 and 20
+Matrix element connecting excitations 19 and 23
+Matrix element connecting excitations 21 and 22
+Matrix element connecting excitations 23 and 25
+task: overlap elements 0 7 --- time for FermionicOperator 0.000033
+task: overlap elements 0 7 --- time for Mapping 0.003898
+task: overlap elements 0 17 --- time for FermionicOperator 0.000060
+task: overlap elements 0 17 --- time for Mapping 0.006042
+task: overlap elements 1 2 --- time for FermionicOperator 0.000025
+task: overlap elements 1 2 --- time for Mapping 0.003386
+task: overlap elements 1 12 --- time for FermionicOperator 0.000040
+task: overlap elements 1 12 --- time for Mapping 0.133224
+task: overlap elements 1 22 --- time for FermionicOperator 0.000319
+task: overlap elements 1 22 --- time for Mapping 0.041023
+task: overlap elements 2 8 --- time for FermionicOperator 0.001294
+task: overlap elements 2 8 --- time for Mapping 0.107172
+task: overlap elements 2 18 --- time for FermionicOperator 0.000123
+task: overlap elements 2 18 --- time for Mapping 0.141525
+task: overlap elements 3 5 --- time for FermionicOperator 0.000123
+task: overlap elements 3 5 --- time for Mapping 0.001304
+task: overlap elements 3 15 --- time for FermionicOperator 0.000068
+task: overlap elements 3 15 --- time for Mapping 0.000920
+task: overlap elements 3 25 --- time for FermionicOperator 0.000039
+task: overlap elements 3 25 --- time for Mapping 0.090002
+task: overlap elements 4 13 --- time for FermionicOperator 0.000409
+task: overlap elements 4 13 --- time for Mapping 0.024052
+task: overlap elements 4 23 --- time for FermionicOperator 0.000038
+task: overlap elements 4 23 --- time for Mapping 0.001979
+task: overlap elements 5 12 --- time for FermionicOperator 0.000055
+task: overlap elements 5 12 --- time for Mapping 0.006138
+task: overlap elements 5 22 --- time for FermionicOperator 0.000040
+task: overlap elements 5 22 --- time for Mapping 0.000974
+task: overlap elements 6 12 --- time for FermionicOperator 0.000039
+task: overlap elements 6 12 --- time for Mapping 0.007526
+task: overlap elements 6 22 --- time for FermionicOperator 0.000520
+task: overlap elements 6 22 --- time for Mapping 0.141672
+task: overlap elements 7 13 --- time for FermionicOperator 0.004155
+task: overlap elements 7 13 --- time for Mapping 0.026015
+task: overlap elements 7 23 --- time for FermionicOperator 0.000058
+task: overlap elements 7 23 --- time for Mapping 0.086047
+task: overlap elements 8 15 --- time for FermionicOperator 0.044959
+task: overlap elements 8 15 --- time for Mapping 0.126928
+task: overlap elements 8 25 --- time for FermionicOperator 0.002788
+task: overlap elements 8 25 --- time for Mapping 0.131211
+task: overlap elements 9 18 --- time for FermionicOperator 0.004793
+task: overlap elements 9 18 --- time for Mapping 0.139487
+task: overlap elements 10 12 --- time for FermionicOperator 0.001614
+task: overlap elements 10 12 --- time for Mapping 0.191515
+task: overlap elements 10 22 --- time for FermionicOperator 0.002618
+task: overlap elements 10 22 --- time for Mapping 0.136066
+task: overlap elements 11 17 --- time for FermionicOperator 0.013273
+task: overlap elements 11 17 --- time for Mapping 0.114792
+task: overlap elements 12 13 --- time for FermionicOperator 0.001977
+task: overlap elements 12 13 --- time for Mapping 0.140219
+task: overlap elements 12 23 --- time for FermionicOperator 0.001670
+task: overlap elements 12 23 --- time for Mapping 0.002021
+task: overlap elements 13 20 --- time for FermionicOperator 0.001172
+task: overlap elements 13 20 --- time for Mapping 0.185509
+task: overlap elements 14 18 --- time for FermionicOperator 0.001925
+task: overlap elements 14 18 --- time for Mapping 0.126235
+task: overlap elements 15 17 --- time for FermionicOperator 0.001624
+task: overlap elements 15 17 --- time for Mapping 0.144425
+task: overlap elements 16 17 --- time for FermionicOperator 0.004336
+task: overlap elements 16 17 --- time for Mapping 0.158593
+task: overlap elements 17 18 --- time for FermionicOperator 0.004036
+task: overlap elements 17 18 --- time for Mapping 0.008384
+task: overlap elements 18 20 --- time for FermionicOperator 0.001225
+task: overlap elements 18 20 --- time for Mapping 0.139108
+task: overlap elements 19 23 --- time for FermionicOperator 0.003780
+task: overlap elements 19 23 --- time for Mapping 0.102289
+task: overlap elements 21 22 --- time for FermionicOperator 0.007741
+task: overlap elements 21 22 --- time for Mapping 0.056110
+task: overlap elements 23 25 --- time for FermionicOperator 0.001238
+task: overlap elements 23 25 --- time for Mapping 0.138369
+task: overlap,adj_nor --- I,J,x[I,J] = 0 7 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 7 0 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 0 17 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 17 0 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 1 2 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 2 1 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 1 12 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 12 1 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 1 22 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 22 1 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 2 8 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 8 2 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 2 18 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 18 2 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 3 5 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 5 3 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 3 15 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 15 3 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 3 25 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 25 3 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 4 13 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 13 4 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 4 23 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 23 4 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 5 12 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 12 5 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 5 22 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 22 5 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 6 12 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 12 6 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 6 22 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 22 6 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 7 13 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 13 7 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 7 23 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 23 7 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 8 15 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 15 8 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 8 25 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 25 8 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 9 18 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 18 9 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 10 12 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 12 10 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 10 22 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 22 10 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 11 17 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 17 11 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 12 13 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 13 12 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 12 23 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 23 12 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 13 20 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 20 13 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 14 18 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 18 14 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 15 17 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 17 15 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 16 17 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 17 16 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 17 18 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 18 17 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 18 20 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 20 18 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 19 23 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 23 19 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 21 22 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 22 21 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 23 25 0.000000 +/- 0.000000
+task: overlap,adj_nor --- I,J,x[I,J] = 25 23 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 0 7 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 7 0 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 0 17 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 17 0 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 1 2 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 2 1 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 1 12 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 12 1 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 1 22 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 22 1 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 2 8 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 8 2 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 2 18 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 18 2 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 3 5 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 5 3 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 3 15 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 15 3 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 3 25 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 25 3 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 4 13 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 13 4 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 4 23 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 23 4 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 5 12 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 12 5 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 5 22 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 22 5 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 6 12 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 12 6 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 6 22 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 22 6 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 7 13 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 13 7 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 7 23 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 23 7 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 8 15 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 15 8 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 8 25 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 25 8 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 9 18 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 18 9 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 10 12 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 12 10 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 10 22 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 22 10 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 11 17 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 17 11 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 12 13 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 13 12 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 12 23 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 23 12 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 13 20 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 20 13 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 14 18 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 18 14 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 15 17 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 17 15 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 16 17 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 17 16 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 17 18 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 18 17 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 18 20 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 20 18 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 19 23 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 23 19 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 21 22 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 22 21 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 23 25 0.000000 +/- 0.000000
+task: overlap,adj_adj --- I,J,x[I,J] = 25 23 0.000000 +/- 0.000000
+task: diagnosis_number elements 0 7 --- time for FermionicOperator 0.000185
+task: diagnosis_number elements 0 7 --- time for Mapping 0.002136
+task: diagnosis_number elements 0 17 --- time for FermionicOperator 0.000369
+task: diagnosis_number elements 0 17 --- time for Mapping 0.067374
+task: diagnosis_number elements 1 2 --- time for FermionicOperator 0.000380
+task: diagnosis_number elements 1 2 --- time for Mapping 0.002006
+task: diagnosis_number elements 1 12 --- time for FermionicOperator 0.000418
+task: diagnosis_number elements 1 12 --- time for Mapping 0.062989
+task: diagnosis_number elements 1 22 --- time for FermionicOperator 0.000562
+task: diagnosis_number elements 1 22 --- time for Mapping 0.001969
+task: diagnosis_number elements 2 8 --- time for FermionicOperator 0.000318
+task: diagnosis_number elements 2 8 --- time for Mapping 0.055717
+task: diagnosis_number elements 2 18 --- time for FermionicOperator 0.000741
+task: diagnosis_number elements 2 18 --- time for Mapping 0.058111
+task: diagnosis_number elements 3 5 --- time for FermionicOperator 0.000335
+task: diagnosis_number elements 3 5 --- time for Mapping 0.001886
+task: diagnosis_number elements 3 15 --- time for FermionicOperator 0.000558
+task: diagnosis_number elements 3 15 --- time for Mapping 0.002115
+task: diagnosis_number elements 3 25 --- time for FermionicOperator 0.000361
+task: diagnosis_number elements 3 25 --- time for Mapping 0.058145
+task: diagnosis_number elements 4 13 --- time for FermionicOperator 0.000768
+task: diagnosis_number elements 4 13 --- time for Mapping 0.063395
+task: diagnosis_number elements 4 23 --- time for FermionicOperator 0.000730
+task: diagnosis_number elements 4 23 --- time for Mapping 0.002278
+task: diagnosis_number elements 5 12 --- time for FermionicOperator 0.000356
+task: diagnosis_number elements 5 12 --- time for Mapping 0.053922
+task: diagnosis_number elements 5 22 --- time for FermionicOperator 0.000642
+task: diagnosis_number elements 5 22 --- time for Mapping 0.002212
+task: diagnosis_number elements 6 12 --- time for FermionicOperator 0.000350
+task: diagnosis_number elements 6 12 --- time for Mapping 0.061809
+task: diagnosis_number elements 6 22 --- time for FermionicOperator 0.000614
+task: diagnosis_number elements 6 22 --- time for Mapping 0.061389
+task: diagnosis_number elements 7 13 --- time for FermionicOperator 0.000556
+task: diagnosis_number elements 7 13 --- time for Mapping 0.068999
+task: diagnosis_number elements 7 23 --- time for FermionicOperator 0.000769
+task: diagnosis_number elements 7 23 --- time for Mapping 0.096801
+task: diagnosis_number elements 8 15 --- time for FermionicOperator 0.004039
+task: diagnosis_number elements 8 15 --- time for Mapping 0.108153
+task: diagnosis_number elements 8 25 --- time for FermionicOperator 0.004380
+task: diagnosis_number elements 8 25 --- time for Mapping 0.100974
+task: diagnosis_number elements 9 18 --- time for FermionicOperator 0.004086
+task: diagnosis_number elements 9 18 --- time for Mapping 0.098041
+task: diagnosis_number elements 10 12 --- time for FermionicOperator 0.004446
+task: diagnosis_number elements 10 12 --- time for Mapping 0.167352
+task: diagnosis_number elements 10 22 --- time for FermionicOperator 0.003966
+task: diagnosis_number elements 10 22 --- time for Mapping 0.179795
+task: diagnosis_number elements 11 17 --- time for FermionicOperator 0.004094
+task: diagnosis_number elements 11 17 --- time for Mapping 0.103433
+task: diagnosis_number elements 12 13 --- time for FermionicOperator 0.003913
+task: diagnosis_number elements 12 13 --- time for Mapping 0.185247
+task: diagnosis_number elements 12 23 --- time for FermionicOperator 0.005377
+task: diagnosis_number elements 12 23 --- time for Mapping 0.005282
+task: diagnosis_number elements 13 20 --- time for FermionicOperator 0.004692
+task: diagnosis_number elements 13 20 --- time for Mapping 0.122456
+task: diagnosis_number elements 14 18 --- time for FermionicOperator 0.004251
+task: diagnosis_number elements 14 18 --- time for Mapping 0.198278
+task: diagnosis_number elements 15 17 --- time for FermionicOperator 0.004160
+task: diagnosis_number elements 15 17 --- time for Mapping 0.240871
+task: diagnosis_number elements 16 17 --- time for FermionicOperator 0.010501
+task: diagnosis_number elements 16 17 --- time for Mapping 0.180211
+task: diagnosis_number elements 17 18 --- time for FermionicOperator 0.004871
+task: diagnosis_number elements 17 18 --- time for Mapping 0.005352
+task: diagnosis_number elements 18 20 --- time for FermionicOperator 0.038909
+task: diagnosis_number elements 18 20 --- time for Mapping 0.239888
+task: diagnosis_number elements 19 23 --- time for FermionicOperator 0.024201
+task: diagnosis_number elements 19 23 --- time for Mapping 0.375151
+task: diagnosis_number elements 21 22 --- time for FermionicOperator 0.004301
+task: diagnosis_number elements 21 22 --- time for Mapping 0.203648
+task: diagnosis_number elements 23 25 --- time for FermionicOperator 0.013656
+task: diagnosis_number elements 23 25 --- time for Mapping 0.424149
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 0 7 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 7 0 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 0 17 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 17 0 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 1 2 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 2 1 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 1 12 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 12 1 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 1 22 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 22 1 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 2 8 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 8 2 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 2 18 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 18 2 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 3 5 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 5 3 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 3 15 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 15 3 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 3 25 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 25 3 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 4 13 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 13 4 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 4 23 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 23 4 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 5 12 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 12 5 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 5 22 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 22 5 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 6 12 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 12 6 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 6 22 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 22 6 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 7 13 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 13 7 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 7 23 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 23 7 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 8 15 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 15 8 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 8 25 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 25 8 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 9 18 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 18 9 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 10 12 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 12 10 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 10 22 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 22 10 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 11 17 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 17 11 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 12 13 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 13 12 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 12 23 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 23 12 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 13 20 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 20 13 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 14 18 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 18 14 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 15 17 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 17 15 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 16 17 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 17 16 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 17 18 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 18 17 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 18 20 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 20 18 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 19 23 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 23 19 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 21 22 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 22 21 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 23 25 0.000000 +/- 0.000000
+task: diagnosis_number,adj_nor --- I,J,x[I,J] = 25 23 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 0 7 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 7 0 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 0 17 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 17 0 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 1 2 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 2 1 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 1 12 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 12 1 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 1 22 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 22 1 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 2 8 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 8 2 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 2 18 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 18 2 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 3 5 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 5 3 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 3 15 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 15 3 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 3 25 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 25 3 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 4 13 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 13 4 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 4 23 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 23 4 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 5 12 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 12 5 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 5 22 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 22 5 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 6 12 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 12 6 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 6 22 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 22 6 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 7 13 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 13 7 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 7 23 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 23 7 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 8 15 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 15 8 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 8 25 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 25 8 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 9 18 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 18 9 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 10 12 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 12 10 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 10 22 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 22 10 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 11 17 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 17 11 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 12 13 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 13 12 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 12 23 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 23 12 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 13 20 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 20 13 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 14 18 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 18 14 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 15 17 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 17 15 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 16 17 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 17 16 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 17 18 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 18 17 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 18 20 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 20 18 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 19 23 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 23 19 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 21 22 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 22 21 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 23 25 0.000000 +/- 0.000000
+task: diagnosis_number,adj_adj --- I,J,x[I,J] = 25 23 0.000000 +/- 0.000000
+task: diagnosis_spin-z elements 0 7 --- time for FermionicOperator 0.000942
+task: diagnosis_spin-z elements 0 7 --- time for Mapping 0.003156
+task: diagnosis_spin-z elements 0 17 --- time for FermionicOperator 0.000393
+task: diagnosis_spin-z elements 0 17 --- time for Mapping 0.186744
+task: diagnosis_spin-z elements 1 2 --- time for FermionicOperator 0.002112
+task: diagnosis_spin-z elements 1 2 --- time for Mapping 0.002006
+task: diagnosis_spin-z elements 1 12 --- time for FermionicOperator 0.000384
+task: diagnosis_spin-z elements 1 12 --- time for Mapping 0.216537
+task: diagnosis_spin-z elements 1 22 --- time for FermionicOperator 0.004157
+task: diagnosis_spin-z elements 1 22 --- time for Mapping 0.001670
+task: diagnosis_spin-z elements 2 8 --- time for FermionicOperator 0.000252
+task: diagnosis_spin-z elements 2 8 --- time for Mapping 0.130847
+task: diagnosis_spin-z elements 2 18 --- time for FermionicOperator 0.003965
+task: diagnosis_spin-z elements 2 18 --- time for Mapping 0.204579
+task: diagnosis_spin-z elements 3 5 --- time for FermionicOperator 0.000396
+task: diagnosis_spin-z elements 3 5 --- time for Mapping 0.001814
+task: diagnosis_spin-z elements 3 15 --- time for FermionicOperator 0.001374
+task: diagnosis_spin-z elements 3 15 --- time for Mapping 0.009633
+task: diagnosis_spin-z elements 3 25 --- time for FermionicOperator 0.001066
+task: diagnosis_spin-z elements 3 25 --- time for Mapping 0.225308
+task: diagnosis_spin-z elements 4 13 --- time for FermionicOperator 0.001192
+task: diagnosis_spin-z elements 4 13 --- time for Mapping 0.219937
+task: diagnosis_spin-z elements 4 23 --- time for FermionicOperator 0.000558
+task: diagnosis_spin-z elements 4 23 --- time for Mapping 0.002183
+task: diagnosis_spin-z elements 5 12 --- time for FermionicOperator 0.000335
+task: diagnosis_spin-z elements 5 12 --- time for Mapping 0.176163
+task: diagnosis_spin-z elements 5 22 --- time for FermionicOperator 0.000686
+task: diagnosis_spin-z elements 5 22 --- time for Mapping 0.002248
+task: diagnosis_spin-z elements 6 12 --- time for FermionicOperator 0.000343
+task: diagnosis_spin-z elements 6 12 --- time for Mapping 0.206925
+task: diagnosis_spin-z elements 6 22 --- time for FermionicOperator 0.000635
+task: diagnosis_spin-z elements 6 22 --- time for Mapping 0.138730
+task: diagnosis_spin-z elements 7 13 --- time for FermionicOperator 0.000869
+task: diagnosis_spin-z elements 7 13 --- time for Mapping 0.214010
+task: diagnosis_spin-z elements 7 23 --- time for FermionicOperator 0.001370
+task: diagnosis_spin-z elements 7 23 --- time for Mapping 0.205105
+task: diagnosis_spin-z elements 8 15 --- time for FermionicOperator 0.062871
+task: diagnosis_spin-z elements 8 15 --- time for Mapping 0.167383
+task: diagnosis_spin-z elements 8 25 --- time for FermionicOperator 0.017034
+task: diagnosis_spin-z elements 8 25 --- time for Mapping 0.261405
+task: diagnosis_spin-z elements 9 18 --- time for FermionicOperator 0.004644
+task: diagnosis_spin-z elements 9 18 --- time for Mapping 0.181059
+task: diagnosis_spin-z elements 10 12 --- time for FermionicOperator 0.003678
+task: diagnosis_spin-z elements 10 12 --- time for Mapping 0.437586
+task: diagnosis_spin-z elements 10 22 --- time for FermionicOperator 0.016154
+task: diagnosis_spin-z elements 10 22 --- time for Mapping 0.479029
+task: diagnosis_spin-z elements 11 17 --- time for FermionicOperator 0.029445
+task: diagnosis_spin-z elements 11 17 --- time for Mapping 0.230739
+task: diagnosis_spin-z elements 12 13 --- time for FermionicOperator 0.056244
+task: diagnosis_spin-z elements 12 13 --- time for Mapping 0.416216
+task: diagnosis_spin-z elements 12 23 --- time for FermionicOperator 0.005595
+task: diagnosis_spin-z elements 12 23 --- time for Mapping 0.046700
+task: diagnosis_spin-z elements 13 20 --- time for FermionicOperator 0.008654
+task: diagnosis_spin-z elements 13 20 --- time for Mapping 0.269156
+task: diagnosis_spin-z elements 14 18 --- time for FermionicOperator 0.005397
+task: diagnosis_spin-z elements 14 18 --- time for Mapping 0.398343
+task: diagnosis_spin-z elements 15 17 --- time for FermionicOperator 0.005455
+task: diagnosis_spin-z elements 15 17 --- time for Mapping 0.441446
+task: diagnosis_spin-z elements 16 17 --- time for FermionicOperator 0.011555
+task: diagnosis_spin-z elements 16 17 --- time for Mapping 0.382851
+task: diagnosis_spin-z elements 17 18 --- time for FermionicOperator 0.029422
+task: diagnosis_spin-z elements 17 18 --- time for Mapping 0.007778
+task: diagnosis_spin-z elements 18 20 --- time for FermionicOperator 0.010551
+task: diagnosis_spin-z elements 18 20 --- time for Mapping 0.453096
+task: diagnosis_spin-z elements 19 23 --- time for FermionicOperator 0.015159
+task: diagnosis_spin-z elements 19 23 --- time for Mapping 0.493631
+task: diagnosis_spin-z elements 21 22 --- time for FermionicOperator 0.005513
+task: diagnosis_spin-z elements 21 22 --- time for Mapping 0.215839
+task: diagnosis_spin-z elements 23 25 --- time for FermionicOperator 0.012012
+task: diagnosis_spin-z elements 23 25 --- time for Mapping 0.502510
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 0 7 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 7 0 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 0 17 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 17 0 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 1 2 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 2 1 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 1 12 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 12 1 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 1 22 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 22 1 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 2 8 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 8 2 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 2 18 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 18 2 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 3 5 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 5 3 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 3 15 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 15 3 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 3 25 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 25 3 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 4 13 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 13 4 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 4 23 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 23 4 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 5 12 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 12 5 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 5 22 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 22 5 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 6 12 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 12 6 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 6 22 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 22 6 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 7 13 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 13 7 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 7 23 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 23 7 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 8 15 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 15 8 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 8 25 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 25 8 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 9 18 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 18 9 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 10 12 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 12 10 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 10 22 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 22 10 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 11 17 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 17 11 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 12 13 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 13 12 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 12 23 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 23 12 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 13 20 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 20 13 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 14 18 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 18 14 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 15 17 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 17 15 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 16 17 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 17 16 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 17 18 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 18 17 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 18 20 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 20 18 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 19 23 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 23 19 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 21 22 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 22 21 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 23 25 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_nor --- I,J,x[I,J] = 25 23 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 0 7 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 7 0 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 0 17 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 17 0 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 1 2 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 2 1 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 1 12 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 12 1 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 1 22 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 22 1 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 2 8 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 8 2 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 2 18 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 18 2 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 3 5 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 5 3 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 3 15 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 15 3 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 3 25 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 25 3 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 4 13 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 13 4 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 4 23 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 23 4 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 5 12 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 12 5 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 5 22 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 22 5 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 6 12 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 12 6 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 6 22 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 22 6 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 7 13 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 13 7 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 7 23 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 23 7 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 8 15 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 15 8 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 8 25 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 25 8 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 9 18 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 18 9 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 10 12 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 12 10 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 10 22 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 22 10 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 11 17 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 17 11 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 12 13 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 13 12 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 12 23 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 23 12 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 13 20 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 20 13 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 14 18 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 18 14 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 15 17 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 17 15 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 16 17 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 17 16 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 17 18 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 18 17 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 18 20 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 20 18 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 19 23 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 23 19 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 21 22 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 22 21 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 23 25 0.000000 +/- 0.000000
+task: diagnosis_spin-z,adj_adj --- I,J,x[I,J] = 25 23 0.000000 +/- 0.000000
+task: hamiltonian elements 0 7 --- time for FermionicOperator 0.004053
+task: hamiltonian elements 0 7 --- time for Mapping 0.648098
+task: hamiltonian elements 0 17 --- time for FermionicOperator 0.037383
+task: hamiltonian elements 0 17 --- time for Mapping 6.287539
+task: hamiltonian elements 1 2 --- time for FermionicOperator 0.025328
+task: hamiltonian elements 1 2 --- time for Mapping 0.662202
+task: hamiltonian elements 1 12 --- time for FermionicOperator 0.696189
+task: hamiltonian elements 1 12 --- time for Mapping 10.358144
+task: hamiltonian elements 1 22 --- time for FermionicOperator 0.081656
+task: hamiltonian elements 1 22 --- time for Mapping 3.129005
+task: hamiltonian elements 2 8 --- time for FermionicOperator 0.098254
+task: hamiltonian elements 2 8 --- time for Mapping 9.898032
+task: hamiltonian elements 2 18 --- time for FermionicOperator 0.527899
+task: hamiltonian elements 2 18 --- time for Mapping 10.743565
+task: hamiltonian elements 3 5 --- time for FermionicOperator 0.005783
+task: hamiltonian elements 3 5 --- time for Mapping 0.681589
+task: hamiltonian elements 3 15 --- time for FermionicOperator 0.068378
+task: hamiltonian elements 3 15 --- time for Mapping 3.444269
+task: hamiltonian elements 3 25 --- time for FermionicOperator 0.099081
+task: hamiltonian elements 3 25 --- time for Mapping 11.054577
+task: hamiltonian elements 4 13 --- time for FermionicOperator 0.051957
+task: hamiltonian elements 4 13 --- time for Mapping 8.456796
+task: hamiltonian elements 4 23 --- time for FermionicOperator 0.056411
+task: hamiltonian elements 4 23 --- time for Mapping 4.534572
+task: hamiltonian elements 5 12 --- time for FermionicOperator 0.098825
+task: hamiltonian elements 5 12 --- time for Mapping 8.977673
+task: hamiltonian elements 5 22 --- time for FermionicOperator 0.081675
+task: hamiltonian elements 5 22 --- time for Mapping 3.962686
+task: hamiltonian elements 6 12 --- time for FermionicOperator 0.073410
+task: hamiltonian elements 6 12 --- time for Mapping 7.617921
+task: hamiltonian elements 6 22 --- time for FermionicOperator 0.102982
+task: hamiltonian elements 6 22 --- time for Mapping 10.936273
+task: hamiltonian elements 7 13 --- time for FermionicOperator 0.551659
+task: hamiltonian elements 7 13 --- time for Mapping 6.591672
+task: hamiltonian elements 7 23 --- time for FermionicOperator 0.096480
+task: hamiltonian elements 7 23 --- time for Mapping 10.715137
+task: hamiltonian elements 8 15 --- time for FermionicOperator 0.851650
+task: hamiltonian elements 8 15 --- time for Mapping 38.338627
+task: hamiltonian elements 8 25 --- time for FermionicOperator 1.660865
+task: hamiltonian elements 8 25 --- time for Mapping 41.064633
+task: hamiltonian elements 9 18 --- time for FermionicOperator 1.113437
+task: hamiltonian elements 9 18 --- time for Mapping 38.969984
+task: hamiltonian elements 10 12 --- time for FermionicOperator 1.078644
+task: hamiltonian elements 10 12 --- time for Mapping 53.926371
+task: hamiltonian elements 10 22 --- time for FermionicOperator 1.156923
